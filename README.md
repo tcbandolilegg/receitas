@@ -1,4 +1,4 @@
-# receitas de Família
+# Receitas de Família
 
 ## Lembrando que o caderno da vovó não pode virar PÓ
 
