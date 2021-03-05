@@ -8,4 +8,4 @@ Ana Freitas, Norylaine e Thereza Cristina
 
 Par a presentação no demoday do curso Ela é CTO, desenvolvido pela B2Mamy e parceria com a Mastertech.
 
-![Fundo do Site](\images\fundoprincipal.png)
+![Fundo do Site](https://github.com/tcbandolilegg/receitas/blob/main/images/fundoprincipal.png)
