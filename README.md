@@ -4,9 +4,7 @@
 
 ### Este projeto foi idealizado pela alunas
 
-Ana Freitas
-Norylaine
-Thereza Cristina
+Ana Freitas, Norylaine e Thereza Cristina
 
 Par a presentação no demoday do curso Ela é CTO, desenvolvido pela B2Mamy e parceria com a Mastertech.
 
