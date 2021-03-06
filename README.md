@@ -6,8 +6,8 @@
 
 #### Ana Freitas, Norylaine e Thereza Cristina
 
-##### Este projeto foi desenvolvido no intuito da apresentação no demoday do curso Ela é CTO, desenvolvido pela B2Mamy e parceria com a Mastertech.
+##### Este projeto foi desenvolvido no intuito da apresentação no demoday do curso Ela é CTO, desenvolvido pela B2Mamy e parceria com a Mastertech
 
 ![Fundo do Site](https://github.com/tcbandolilegg/receitas/blob/main/images/fundoprincipal.png)
 
-##### O Receitas de Família é uma versão digital, daquelas receita que são passadas muitas vezes de formas orais, ou naquele cadeerninho que as vezes tá tão velhinho que quase tá virando pó.
+##### O Receitas de Família é uma versão digital, daquelas receita que são passadas muitas vezes de formas orais, ou naquele cadeerninho que as vezes tá tão velhinho que quase tá virando pó
