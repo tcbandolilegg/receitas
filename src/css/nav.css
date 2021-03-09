@@ -1,0 +1,42 @@
+nav {
+  align-items: center;
+  align-content: space-around;
+  background-color: var(--dark_orange);
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  justify-content: space-around;
+  margin-bottom: 5px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+nav button {
+  background-color: white;
+  width: auto;
+  border-radius: 5px;
+  height: 35px;
+}
+
+nav input {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  height: 35px;
+}
+
+nav img {
+  height: 45px;
+}
+
+nav a:hover {
+  color: #fffb03;
+  cursor: pointer;
+  justify-content: space-between;
+}
