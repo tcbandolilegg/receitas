@@ -15,3 +15,83 @@ a {
 .redesSociaisRodape img:hover {
   cursor: pointer;
 }
+
+.principal div {
+  max-width: 800px;
+}
+
+.title img {
+  max-width: 1200px;
+}
+
+.principal img {
+  max-width: 1200px;
+}
+
+.principal {
+  align-items: center;
+  margin-top: 70px;
+  display: flex;
+  /* border: solid 5px green; */
+  padding: 2px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.title {
+  align-items: center;
+  margin-top: 70px;
+  display: flex;
+  /* border: solid 5px green; */
+  padding: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.home {
+  /* border: red solid 10px; */
+  margin-top: 30px;
+}
+
+.ebook {
+  border: var(--dark_orange) solid 5px;
+  width: 400px;
+  height: 700px;
+  justify-content: center;
+  text-align: center;
+}
+
+.ebook p {
+  font-size: x-large;
+  color: var(--dark_orange);
+}
+
+.ebookCab {
+  background-color: var(--dark_orange);
+  font-weight: bold;
+  font-size: x-large;
+  color: var(--ligth_yellow);
+  text-align: center;
+}
+
+.ebookCab p {
+  color: var(--ligth_yellow);
+}
+
+.slogan h1 {
+  font-size: 50px;
+  font-weight: bolder;
+  color: var(--dark_orange);
+  text-align: center;
+}
+
+.textHome {
+  margin-top: 25px;
+  /* margin-bottom: 100px; */
+  text-align: justify;
+  text-indent: 50px;
+  font-size: 30px;
+  font-weight: 100;
+  /* max-width: 600px; */
+  margin: 100px;
+  padding: 5px;
+}

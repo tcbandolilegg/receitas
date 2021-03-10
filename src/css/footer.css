@@ -17,8 +17,6 @@ footer {
   text-align: left;
   display: flex;
   background-color: var(--dark_orange);
-  /* background-color: #2d46b6; */
-  /* color: white; */
   color: var(--ligth_yellow);
   height: 200px;
   justify-content: space-around;
