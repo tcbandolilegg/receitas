@@ -6,3 +6,12 @@ body {
   margin-top: 0;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+a {
+  text-decoration: none;
+}
+
+.redesSociais img:hover,
+.redesSociaisRodape img:hover {
+  cursor: pointer;
+}
