@@ -1,0 +1,44 @@
+
+ nav{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+ 
+body{
+    margin: 0;
+}
+
+header{
+    height: 800px;
+}
+
+header img{
+    background-image: url(../assets/images/fundoprincipal.png);
+    background-size: cover;
+    height: 800px; 
+}
+
+.container{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.imagemContainer{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    height: 50%;
+}
+
+.campoUsuario{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    height: 50%;
+}
+
+
+
+
