@@ -14,15 +14,8 @@ nav {
 
 nav a {
   color: white;
-  font-size: 16px;
+  font-size: x-large;
   text-decoration: none;
-}
-
-nav button {
-  background-color: white;
-  width: auto;
-  border-radius: 5px;
-  height: 35px;
 }
 
 nav input {
@@ -39,4 +32,24 @@ nav a:hover {
   color: #fffb03;
   cursor: pointer;
   justify-content: space-between;
+}
+
+#login:hover,
+#btlogin:hover {
+  background-color: var(--mustard);
+  width: auto;
+  border-radius: 5px;
+  height: 35px;
+  font-size: large;
+  color: white;
+}
+
+#login,
+#btlogin {
+  background-color: white;
+  width: auto;
+  border-radius: 5px;
+  height: 35px;
+  font-size: large;
+  color: var(--mustard);
 }
