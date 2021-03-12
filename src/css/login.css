@@ -1,7 +1,9 @@
-nav {
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
+nav p{
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: sans-serif;
 }
 
 body {
@@ -18,24 +20,31 @@ header img {
   height: 800px;
 }
 
-#container {
-  align-items: center;
+.container {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 70px;
 }
 
-#imagemContainer {
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
-  height: 50%;
+.container img {
+    height: 90%;
+    width: 75%;
 }
 
-#campoUsuario {
-  align-items: left;
-  display: flex;
-  justify-content: space-around;
-  height: 50%;
-  flex-direction: column;
-}
+.ebook {
+    border: var(--dark_orange) solid 5px;
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+    text-align: center;
+    margin: 50px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .botaoLaranja{
+      margin: auto;
+  }
+
+  
+  
