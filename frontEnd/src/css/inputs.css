@@ -1,0 +1,7 @@
+.inputLogin {
+  margin: 10px;
+  padding: 5px;
+  font-size: var(--font_input);
+  color: var(--black_orange);
+  border-radius: 10px;
+}

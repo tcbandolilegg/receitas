@@ -1,4 +1,4 @@
-nav p{
+nav p {
   font-size: 20px;
   color: white;
   text-transform: uppercase;
@@ -17,7 +17,7 @@ header {
 header img {
   background-image: url(../assets/images/fundoprincipal.png);
   background-size: cover;
-  height: 800px;
+  height: 100%;
 }
 
 .container {
@@ -27,24 +27,21 @@ header img {
 }
 
 .container img {
-    height: 90%;
-    width: 75%;
+  height: 90%;
+  width: 75%;
 }
 
 .ebook {
-    border: var(--dark_orange) solid 5px;
-    width: 400px;
-    height: 400px;
-    justify-content: center;
-    text-align: center;
-    margin: 50px 20px;
-    display: flex;
-    flex-direction: column;
-  }
+  border: var(--dark_orange) solid 5px;
+  width: 400px;
+  height: 400px;
+  justify-content: center;
+  text-align: center;
+  margin: 50px 20px;
+  display: flex;
+  flex-direction: column;
+}
 
-  .botaoLaranja{
-      margin: auto;
-  }
-
-  
-  
+.botaoLaranja {
+  margin: auto;
+}

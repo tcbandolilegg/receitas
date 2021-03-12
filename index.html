@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/frontEnd/src/css/footer.css" />
     <link rel="stylesheet" href="/frontEnd/src/css/buttons.css" />
     <link rel="stylesheet" href="/frontEnd/src/css/forms.css" />
+    <link rel="stylesheet" href="/frontEnd/src/css/inputs.css" />
     <link rel="stylesheet" href="/frontEnd/style/owl/owl.carousel.min.css" />
     <link
       rel="stylesheet"
@@ -19,20 +20,20 @@
   </head>
   <body>
     <nav>
-      <a id="logo" href="#capa">
+      <a id="logo" href="/index.html">
         <img
-          src="/src/assets/images/logo_creme.png"
+          src="/frontEnd/src/assets/images/logo_creme.png"
           alt="Logo receitas de família - o caderno da vovó  que não vira pó"
         />
       </a>
-      <a href="/pages/quem_somos.html" target="_blank">QUEM SOMOS</a>
+      <a href="/frontEnd/pages/quem_somos.html" target="_blank">QUEM SOMOS</a>
       <a href="#parcerias">PARCERIAS</a>
-      <a href="/pages/blog.html">BLOG</a>
+      <a href="/frontEnd/pages/blog.html">BLOG</a>
       <a href="#faleConosco">FALE CONOSCO</a>
       <input id="find" type="text" placeholder="Pesquisa" />
 
       <!-- <button id="login">ENTRAR</button> -->
-      <a id="login" href="./pages/login.html" target="_parent">
+      <a id="login" href="/frontEnd/pages/login.html" target="_parent">
         <button id="btlogin" wfd-id="29" style="color: black">ENTRAR</button>
       </a>
 
@@ -45,13 +46,16 @@
     <section id="capa" class="title">
       <div>
         <br /><br />
-        <img src="./src/assets/images/receitas_familia_titulo.png" alt="" />
+        <img
+          src="/frontEnd/src/assets/images/receitas_familia_titulo.png"
+          alt=""
+        />
       </div>
     </section>
     <section class="principal">
       <div>
         <img
-          src="./src/assets/images/fundoprincipal.png"
+          src="/frontEnd/src/assets/images/fundoprincipal.png"
           alt="Cadeerno de receitas da família"
         />
       </div>
@@ -73,10 +77,20 @@
           <br />
           <div class="formLeadEbook" method="get" action="">
             <br />
-            <input type="text" name="nome" placeholder="digite seu Nome aqui" />
+            <input
+              class="inputLogin"
+              type="text"
+              name="nome"
+              placeholder="digite seu Nome aqui"
+            />
             <br />
             <br />
-            <input type="e-mail" name="email" placeholder="Digite seu e-mail" />
+            <input
+              class="inputLogin"
+              type="e-mail"
+              name="email"
+              placeholder="Digite seu e-mail"
+            />
             <br />
             <br />
             <input
@@ -133,22 +147,28 @@
         <h1>REDES SOCIAS</h1>
         <br />
         <a class="redesSociais" href="">
-          <img src="./src/assets/images/facebook_b.png" alt="Facebook" />
+          <img src="frontend/src/assets/images/facebook_b.png" alt="Facebook" />
         </a>
         <a class="redesSociais" href="">
-          <img src="./src/assets/images/instagram_b.png" alt="Instagram" />
+          <img
+            src="frontend/src/assets/images/instagram_b.png"
+            alt="Instagram"
+          />
         </a>
         <a class="redesSociais" href="">
-          <img src="./src/assets/images/linkedin_b.png" alt="LinkedIn" />
+          <img src="frontend/src/assets/images/linkedin_b.png" alt="LinkedIn" />
         </a>
         <a class="redesSociais" href="">
-          <img src="./src/assets/images/pinterest_b.png" alt="Pintrest" />
+          <img
+            src="frontend/src/assets/images/pinterest_b.png"
+            alt="Pintrest"
+          />
         </a>
         <a class="redesSociais" href="">
-          <img src="./src/assets/images/twitter_b.png" alt="Twitter" />
+          <img src="frontend/src/assets/images/twitter_b.png" alt="Twitter" />
         </a>
         <a class="redesSociais" href="">
-          <img src="./src/assets/images/youtube_b.png" alt="Youtube" />
+          <img src="frontend/src/assets/images/youtube_b.png" alt="Youtube" />
         </a>
       </div>
       <div class="formContato" method="get" action="">
@@ -172,7 +192,7 @@
         class="redesSociaisRodape"
         href="https://github.com/tcbandolilegg/receitas"
       >
-        <img src="./src/assets/images/gitHub.png" alt="GitHub" />
+        <img src="frontend/src/assets/images/gitHub.png" alt="GitHub" />
       </a>
     </footer>
   </body>
