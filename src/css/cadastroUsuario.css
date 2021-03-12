@@ -1,24 +1,24 @@
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
 
-section{
-    background-color:#ffd3a3;
-    height: 1000px;
-    display: flex;
-    justify-content: space-around;
+section {
+  background-color: var(--ligth_yellow);
+  height: 1000px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .campo {
-    background-color: white;
-    margin: 100px;
+  background-color: white;
+  margin: 100px;
 }
 
-button{
-    border-radius: 50px;
-    background-color: #d82423;
+button {
+  border-radius: 50px;
+  background-color: var(--dark_orange);
 }
 
-h1{
-    font-size: 40px;
+h1 {
+  font-size: 40px;
 }

@@ -1,38 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>cadastro usuario</title>
-    <link rel="stylesheet" href="../src/css/reset.css">
-    <link rel="stylesheet" href="../src/css/cadastroUsuario.css">
-    <link rel="stylesheet" href="../src/css/nav.css">
-    <link rel="stylesheet" href="../src/css/var_ambiente.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../src/css/reset.css" />
+    <link rel="stylesheet" href="../src/css/cadastroUsuario.css" />
+    <link rel="stylesheet" href="../src/css/nav.css" />
+    <link rel="stylesheet" href="../src/css/var_ambiente.css" />
+  </head>
+  <body>
+    <nav>
+      <a id="logo" href="../index.html">
+        <img
+          src="/src/assets/images/logo_creme.png"
+          alt="Logo receitas de família - o caderno da vovó  que não vira pó"
+        />
+      </a>
+      <a href="/pages/quem_somos.html" target="_blank">QUEM SOMOS</a>
+      <a href="#parcerias">PARCERIAS</a>
+      <a href="/pages/blog.html">BLOG</a>
+      <a href="#faleConosco">FALE CONOSCO</a>
+      <input id="find" type="text" placeholder="Pesquisa" />
+
+      <!-- <button id="login">ENTRAR</button> -->
+      <a id="login" href="./pages/login.html" target="_parent">
+        <button id="btlogin" wfd-id="29" style="color: black">ENTRAR</button>
+      </a>
+
+      <div class="menuHamburger">
+        <span class="hamburger">.</span>
+        <span class="hamburger">.</span>
+        <span class="hamburger">.</span>
+      </div>
+    </nav>
     <section>
-        <div>
-            <h1>
-                Cadastro de usuário
-            </h1>
-        </div>
-        <div class="campo">
-            <p>Nome de Usuário</p>
-            <input placeholder="Nome de Usuário" type="text">
-            <p>Nome</p>
-            <input placeholder="Nome" type="text">
-            <p>Sobrenome Materno</p>
-            <input placeholder="Sobrenome materno" type="text">
-            <p>Sobrenome paterno</p>
-            <input placeholder="Sobrenome paterno" type="text">
-            <p>E-mail</p>
-            <input placeholder="E-mail" type="text">
-            <p>Senha</p>
-            <input placeholder="Senha" type="text">
-            <p>Confirme a senha</p>
-            <input placeholder="Confirmar senha" type="text">
-            <button>salvar</button>
-        </div>
+      <div>
+        <h1>Cadastro de usuário</h1>
+      </div>
+      <div class="campo">
+        <p>Nome de Usuário</p>
+        <input placeholder="Nome de Usuário" type="text" />
+        <p>Nome</p>
+        <input placeholder="Nome" type="text" />
+        <p>Sobrenome Materno</p>
+        <input placeholder="Sobrenome materno" type="text" />
+        <p>Sobrenome paterno</p>
+        <input placeholder="Sobrenome paterno" type="text" />
+        <p>E-mail</p>
+        <input placeholder="E-mail" type="text" />
+        <p>Senha</p>
+        <input placeholder="Senha" type="text" />
+        <p>Confirme a senha</p>
+        <input placeholder="Confirmar senha" type="text" />
+        <button>salvar</button>
+      </div>
     </section>
-</body>
+  </body>
 </html>

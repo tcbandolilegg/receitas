@@ -35,6 +35,7 @@ a {
   /* border: solid 5px green; */
   padding: 2px;
   flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 .title {
