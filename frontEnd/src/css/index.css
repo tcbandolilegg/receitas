@@ -25,14 +25,13 @@ a {
 }
 
 .principal img {
-  max-width: 1200px;
+  max-width: 1000px;
 }
 
 .principal {
   align-items: center;
   margin-top: 70px;
   display: flex;
-
   padding: 2px;
   flex-wrap: wrap;
   flex-wrap: wrap;
