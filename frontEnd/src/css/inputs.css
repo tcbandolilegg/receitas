@@ -5,3 +5,7 @@
   color: var(--black_orange);
   border-radius: 10px;
 }
+
+input {
+  border-radius: 10px;
+}
