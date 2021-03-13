@@ -20,12 +20,13 @@ section {
   display: flex ;
   flex-direction: row;
   margin-bottom: 16px;
-  
 }
+
 .campo ul p{
   width: 150px;
   text-align: right;
   margin-right: 16px;
+  font-size: 20px;
 
 }
 
@@ -44,3 +45,5 @@ section {
 .botaoLaranja{
   margin: auto;
 }
+
+

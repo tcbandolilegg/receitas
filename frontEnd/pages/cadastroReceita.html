@@ -4,16 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>cadastro receita</title>
-    <link rel="stylesheet" href="../frontEnd//src/css/reset.css" />
-    <link rel="stylesheet" href="../frontEnd//src/css/cadastroReceita.css" />
-    <link rel="stylesheet" href="../frontEnd//src/css/nav.css" />
-    <link rel="stylesheet" href="../frontEnd//src/css/var_ambiente.css" />
+    <link rel="stylesheet" href="/frontEnd/src/css/reset.css" />
+    <link rel="stylesheet" href="/frontEnd/src/css/nav.css" />
+    <link rel="stylesheet" href="/frontEnd/src/css/var_ambiente.css" />
+    <link rel="stylesheet" href="/frontEnd/src/css/buttons.css" />
+    <link rel="stylesheet" href="/frontEnd/src/css/index.css" />
+    <link rel="stylesheet" href="/frontEnd/src/css/inputs.css" />
+    <link rel="stylesheet" href="/frontEnd/src/css/footer.css" />
+    <link rel="stylesheet" href="/frontEnd/src/css/cadastroReceita.css" />
   </head>
   <body>
     <nav>
       <a id="logo" href="../frontEnd//index.html">
         <img
-          src="/frontEnd//src/assets/images/logo_creme.png"
+          src="/frontEnd/src/assets/images/logo_creme.png"
           alt="Logo receitas de família - o caderno da vovó  que não vira pó"
         />
       </a>
@@ -21,11 +25,20 @@
       <a href="#parcerias">PARCERIAS</a>
       <a href="/pages/blog.html">BLOG</a>
       <a href="#faleConosco">FALE CONOSCO</a>
-      <input id="find" type="text" placeholder="Pesquisa" />
     </nav>
     <section>
-      <input placeholder="Nome caderno de receitas" type="text" />
-      <input placeholder="Convidar membros" type="text" />
+      <div class="campoCaderno">
+        <h1>Cadastro de caderno de receitas</h1>
+        <ul>
+          <li><p>Nome do caderno de receitas</p>
+            <input placeholder="Nome caderno de receitas" type="text" />
+          </li>
+          <li><p>Convidar membros</p>
+          <input placeholder="Convidar membros" type="text" />
+          </li>
+        </ul>
+        <button class="botaoLaranja">salvar</button>
+      </div>
     </section>
   </body>
 </html>
