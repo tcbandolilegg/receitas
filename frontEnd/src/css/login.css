@@ -14,11 +14,11 @@ header {
   height: 800px;
 }
 
-header img {
+/* header img {
   background-image: url(../assets/images/fundoprincipal.png);
   background-size: cover;
   height: 100%;
-}
+} */
 
 .container {
   display: flex;

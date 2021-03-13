@@ -17,7 +17,7 @@ a {
 }
 
 .principal div {
-  max-width: 800px;
+  max-width: 1200px;
 }
 
 .title img {
@@ -32,7 +32,7 @@ a {
   align-items: center;
   margin-top: 70px;
   display: flex;
-  /* border: solid 5px green; */
+
   padding: 2px;
   flex-wrap: wrap;
   flex-wrap: wrap;
@@ -56,7 +56,7 @@ a {
 .ebook {
   border: var(--dark_orange) solid 5px;
   width: 400px;
-  height: 700px;
+  height: 600px;
   justify-content: center;
   text-align: center;
 }
@@ -64,6 +64,7 @@ a {
 .ebook p {
   font-size: x-large;
   color: var(--dark_orange);
+  margin: 5px;
 }
 
 .ebookCab {
@@ -105,7 +106,7 @@ a {
 }
 
 .time img {
-  margin: 50px;
+  margin: 25px;
   border-radius: 50%;
   border: solid 2px var(--black_orange);
   height: 250px;
