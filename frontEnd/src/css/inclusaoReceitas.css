@@ -1,0 +1,8 @@
+section {
+    background-color: var(--ligth_yellow);
+    margin-top: 70px;
+    padding: 70px 20px;
+    background-image: url(../assets/images/fundoprincipal.png);
+    background-size: cover;
+    height: 700px;
+  }
