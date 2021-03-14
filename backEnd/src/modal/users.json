@@ -10,6 +10,7 @@
     "mae": "Sueli Raquel Elisa",
     "pai": "Luiz Elias Ryan Farias",
     "email": "tcbandolilegg@gmail.com",
+    "foto": "",
     "senha": "1aaaaaa"
   },
   {
@@ -23,6 +24,7 @@
     "mae": "Aurora Rafaela",
     "pai": "Miguel Joaquim da Paz",
     "email": "iago@teste.com",
+    "foto": "",
     "senha": "2bbbbbb"
   },
   {
@@ -36,6 +38,7 @@
     "mae": "Luciana Daniela",
     "pai": "Erick Nathan da Mota",
     "email": "bruno@teste.com",
+    "foto": "",
     "senha": "3cccccc"
   },
   {
@@ -49,6 +52,7 @@
     "mae": "Laís Luzia Liz",
     "pai": "Isaac Gabriel João Assis",
     "email": "alexandre@teste.com",
+    "foto": "",
     "senha": "4dddddd"
   },
   {
@@ -62,6 +66,7 @@
     "mae": "Clarice Ayla Rita",
     "pai": "Oliver Daniel Gustavo Fernandes",
     "email": "augusto@teste.com",
+    "foto": "",
     "senha": "5eeeeee"
   }
 ]

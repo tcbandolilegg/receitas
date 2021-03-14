@@ -52,6 +52,15 @@ a {
   margin-top: 30px;
 }
 
+.cadastro {
+  background-color: var(--ligth_yellow);
+  font-weight: bold;
+  font-size: x-large;
+  color: var(--mustard);
+  text-align: center;
+  border-radius: 18px;
+  border: var(--mustard) solid 6.5px;
+}
 .ebook {
   border: var(--dark_orange) solid 3px;
   width: 400px;
