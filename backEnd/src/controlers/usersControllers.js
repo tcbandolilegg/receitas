@@ -1,6 +1,6 @@
-// https://github.com/tcbandolilegg/receitas/blob/main/backEnd/src/modal/users.json
+
 function doFetch() {
-  fetch('https://api.github.com/users/rrgomide')
+  fetch('./backEnd/src/modal/users.json')
     .then(res => {
       res.json().then(data => {
 

@@ -2,16 +2,16 @@ window.addEventListener('load', function () {
   doFetch();
   doFetchAsync();
 
-  divisionPromise(12, 6).then(result => {
-    console.log(result);
-  });
+  // divisionPromise(12, 6).then(result => {
+  //   console.log(result);
+  // });
 
-  executeDivisionPromise();
-  executeDivisionPromiseAsyncAwait();
+  // executeDivisionPromise();
+  // executeDivisionPromiseAsyncAwait();
 });
 
 function doFetch() {
-  fetch('https://github.com/tcbandolilegg/receitas/blob/main/backEnd/src/modal/users.json')
+  fetch('./backEnd/src/modal/users.json')
     .then(res => {
       res.json().then(data => {
 
@@ -24,9 +24,9 @@ function doFetch() {
 }
 
 async function doFetchAsync() {
-  const res = await fetch('https://github.com/tcbandolilegg/receitas/blob/main/backEnd/src/modal/users.json');
-  const json = await res.json();
-  console.log(json);
+  const res = await fetch('./backEnd/src/modal/users.json')
+  const json = await res.json()
+  console.log(json)
 }
 
 function showData(data) {
