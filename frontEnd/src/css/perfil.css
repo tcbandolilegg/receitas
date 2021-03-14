@@ -1,0 +1,32 @@
+section {
+  background-color: var(--ligth_yellow);
+  margin-top: 70px;
+  padding: 70px 20px;
+  background-image: url(../assets/images/fundoprincipal.png);
+  background-size: cover;
+  height: 700px;
+}
+
+.dados{
+    background-color: white;
+    width: 600px;
+    margin: auto;
+    padding: 40px;
+    height: 600px;
+  }
+
+  .dados h1{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+
+  .perfil{
+    font-size: 20px;
+  }
+
+  .botaoLaranja{
+    margin: auto;
+  }
+

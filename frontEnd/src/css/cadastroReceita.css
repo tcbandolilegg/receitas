@@ -4,7 +4,7 @@ section {
   padding: 70px 20px;
   background-image: url(../assets/images/fundoprincipal.png);
   background-size: cover;
-  height: 650px;
+  height: 700px;
 }
 
 .campoCaderno{
@@ -12,12 +12,13 @@ section {
   width: 400px;
   margin: auto;
   padding: 40px;
+  height: 350px;
 }
 
 .campoCaderno ul li{
   display: flex ;
   flex-direction: row;
-  margin-bottom: 16px;
+  margin-bottom: 40px;
 }
 
 .campoCaderno ul p{

@@ -6,7 +6,7 @@ section {
   padding: 70px 20px;
   background-image: url(../assets/images/fundoprincipal.png);
   background-size: cover;
-  height: 650px;
+  height: 700px;
 }
 
 .campo{
@@ -14,12 +14,13 @@ section {
   width: 400px;
   margin: auto;
   padding: 40px;
+  height: 500px;
 }
 
 .campo ul li{
   display: flex ;
   flex-direction: row;
-  margin-bottom: 16px;
+  margin-bottom: 25px;
 }
 
 .campo ul p{
