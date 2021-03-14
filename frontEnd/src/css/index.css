@@ -125,3 +125,19 @@ a {
   border: solid 2px var(--black_orange);
   height: 250px;
 }
+
+.receita-principal .container {
+  width: 70%;
+}
+
+.box-receita {
+  height: 250px;
+  width: 50px;
+  border-radius: 50%;
+  display: block;
+  cursor: pointer;
+}
+
+.carrosel-receitas {
+  margin-top: 5px;
+}
