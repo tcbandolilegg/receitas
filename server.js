@@ -9,7 +9,8 @@ app.listen(port, () => {
 
 const index = require("./backEnd/src/routes/index")
 const users = require("./backEnd/src/routes/usersRouters")
-const receitas = require("./src/routes/index")
+const receitas = require("./backEnd/src/routes/receitasRouters")
+
 
 
 // app.use("/", index)
