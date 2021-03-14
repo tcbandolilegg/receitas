@@ -13,22 +13,3 @@ body {
 header {
   height: 100px;
 }
-
-.ebook {
-  border: var(--dark_orange) solid 5px;
-  width: 400px;
-  height: 500px;
-  justify-content: center;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
- 
-
-.botaoLaranja {
-  margin: auto;
-}
-
-.principal {
-  align-items: flex-start;
-}

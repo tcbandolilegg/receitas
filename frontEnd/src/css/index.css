@@ -34,8 +34,8 @@ a {
   display: flex;
   padding: 2px;
   flex-wrap: wrap;
-
   justify-content: space-around;
+  align-self: center;
 }
 .title {
   align-items: center;
@@ -58,7 +58,7 @@ a {
   height: 600px;
   justify-content: center;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 20px;
   margin-bottom: 20px;
 }
 
@@ -74,7 +74,7 @@ a {
   font-size: x-large;
   color: var(--mustard);
   text-align: center;
-  border-radius: 10px;
+  border-radius: 18px;
   border: var(--mustard) solid 5px;
 }
 
