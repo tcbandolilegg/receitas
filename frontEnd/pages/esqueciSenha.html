@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="/frontEnd/src/css/var_ambiente.css" />
     <link rel="stylesheet" href="/frontEnd/src/css/buttons.css" />
     <link rel="stylesheet" href="/frontEnd/src/css/index.css" />
+    <link rel="stylesheet" href="/frontEnd/src/css/login.css" />
     <link rel="stylesheet" href="/frontEnd/src/css/inputs.css" />
     <link rel="stylesheet" href="/frontEnd/src/css/footer.css" />
-    <link rel="stylesheet" href="/frontEnd/src/css/login.css" />
   </head>
   <body>
     <nav>
@@ -22,9 +22,21 @@
         />
       </a>
       <!-- <a href="/frontEnd/pages/quem_somos.html" target="_blank">QUEM SOMOS</a>
-      <a href="#parcerias">PARCERIAS</a> -->
-      <a href="/frontEnd/pages/blog.html">BLOG</a>
+      <a href="#parcerias">PARCERIAS</a>
+      <a href="/frontEnd/pages/blog.html">BLOG</a> -->
       <a href="#faleConosco">FALE CONOSCO</a>
+      <input id="find" type="text" placeholder="Pesquisa" />
+
+      <!-- <button id="login">ENTRAR</button> -->
+      <a id="login" href="/frontEnd/pages/login.html" target="_parent">
+        <button id="btlogin" wfd-id="29" style="color: black">ENTRAR</button>
+      </a>
+
+      <div class="menuHamburger">
+        <span class="hamburger">.</span>
+        <span class="hamburger">.</span>
+        <span class="hamburger">.</span>
+      </div>
     </nav>
     <section id="capa" class="title">
       <div>
@@ -35,6 +47,7 @@
         />
       </div>
     </section>
+
     <section class="principal">
       <div>
         <img
@@ -42,38 +55,22 @@
           alt="Caderno de receitas da família"
         />
       </div>
+
       <div class="ebook">
         <div class="ebookCab">
           <br />
-          <p>Entre com seus dados</p>
+          <p>Digite seus dados</p>
+          <p>para receber a dica</p>
+          <p>em seu e-mail</p>
+
           <br />
         </div>
-       <br>
-       <br>
-        <input class="inputLogin" placeholder="usuário" type="text" />
-        <br><br>
-        <input class="inputLogin" placeholder="senha" type="text" />
+        <!-- <input class="inputLogin" placeholder="nome" type="text" /> -->
         <br><br><br><br>
+        <input class="inputLogin" placeholder="e-mail" type="text" />
+        <br><br>
+        <button class="botaoLaranja">Enviar</button>
         
-        <div class="botoes">
-          <a href="/frontEnd/pages/perfil.html" target="_parent">
-            <!-- Precisa validar -->
-            <button class="botaoLaranja">acessar</button>
-          </a>
-        </div>
-        
-        <div class="botoes">
-          <a href="/frontEnd/pages/esqueciSenha.html" target="_parent">
-            <button class="botaoLaranja">esqueci a senha</button>
-          </a>
-        </div>
-        <div class="botoes">
-          <a href="/frontEnd/pages/cadastroUsuario.html" target="_parent">
-            
-            <button class="botaoLaranja">não possuo cadastro</button>
-          </a>
-        </div>
-
         </div>
       </div>
     </section>
@@ -92,7 +89,10 @@
         <h1>REDES SOCIAS</h1>
         <br />
         <a class="redesSociais" href="">
-          <img src="/frontend/src/assets/images/redes_sociais/facebook_b.png" alt="Facebook" />
+          <img
+            src="/frontend/src/assets/images/redes_sociais/facebook_b.png"
+            alt="Facebook"
+          />
         </a>
         <a class="redesSociais" href="">
           <img
@@ -101,7 +101,10 @@
           />
         </a>
         <a class="redesSociais" href="">
-          <img src="/frontend/src/assets/images/redes_sociais/linkedin_b.png" alt="LinkedIn" />
+          <img
+            src="/frontend/src/assets/images/redes_sociais/linkedin_b.png"
+            alt="LinkedIn"
+          />
         </a>
         <a class="redesSociais" href="">
           <img
@@ -110,10 +113,16 @@
           />
         </a>
         <a class="redesSociais" href="">
-          <img src="/frontend/src/assets/images/redes_sociais/twitter_b.png" alt="Twitter" />
+          <img
+            src="/frontend/src/assets/images/redes_sociais/twitter_b.png"
+            alt="Twitter"
+          />
         </a>
         <a class="redesSociais" href="">
-          <img src="/frontend/src/assets/images/redes_sociais/youtube_b.png" alt="Youtube" />
+          <img
+            src="/frontend/src/assets/images/redes_sociais/youtube_b.png"
+            alt="Youtube"
+          />
         </a>
         <a class="redesSociais" href="https://wa.me/5522988399390">
           <img src="/frontend/src/assets/images/redes_sociais/whatsapp_b.png" alt="Whatsapp" />
@@ -128,7 +137,7 @@
         <input type="e-mail" name="email" placeholder="Digite seu e-mail" />
         <br />
         <br />
-        <input class="buttonForm" type="submit" name="login" value="Enviar" />
+        <input class="buttonForm" type="submit" name="enviar" value="Enviar" />
       </div>
     </footer>
     <footer style="justify-content: center" id="license">
@@ -143,7 +152,5 @@
         <img src="/frontend/src/assets/images/redes_sociais/gitHub.png" alt="GitHub" />
       </a>
     </footer>
-    <script src="/frontEnd/js/login.js"></script>
-
   </body>
 </html>
