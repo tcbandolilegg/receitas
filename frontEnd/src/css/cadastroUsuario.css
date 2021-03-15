@@ -1,5 +1,3 @@
-
-
 section {
   background-color: var(--ligth_yellow);
   margin-top: 70px;
@@ -9,42 +7,45 @@ section {
   height: 700px;
 }
 
-.campo{
+.campo {
   background-color: white;
-  width: 400px;
+  width: 600px;
   margin: auto;
   padding: 40px;
-  height: 500px;
+  /* height: 500px; */
 }
 
-.campo ul li{
-  display: flex ;
+.campo ul li {
+  display: flex;
   flex-direction: row;
   margin-bottom: 25px;
 }
 
-.campo ul p{
+.campo ul p {
   width: 150px;
   text-align: right;
   margin-right: 16px;
-  font-size: 20px;
-
+  font-size: x-large;
 }
 
-.campo h1{
+.campo h1 {
   text-align: center;
   font-size: 30px;
   margin-bottom: 40px;
   font-weight: bold;
 }
 
-.campo ul{
+.campo ul {
   display: flex;
   flex-direction: column;
 }
 
-.botaoLaranja{
-  margin: auto;
+.campo input {
+  width: 400px;
+  font-size: x-large;
 }
 
-
+.divBotao {
+  display: flex;
+  justify-content: center;
+}
