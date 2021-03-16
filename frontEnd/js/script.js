@@ -2,26 +2,19 @@ window.addEventListener('load', function () {
   doFetch();
   doFetchAsync();
 
-  // divisionPromise(12, 6).then(result => {
-  //   console.log(result);
-  // });
-
-  // executeDivisionPromise();
-  // executeDivisionPromiseAsyncAwait();
 });
 
-function doFetch() {
-  fetch('./backEnd/src/modal/users.json')
-    .then(res => {
-      res.json().then(data => {
-
-        showData(data);
-      });
-    })
-    .catch(error => {
-      console.log('Erro na requisição');
-    });
-}
+// function doFetch() {
+//   fetch('./backEnd/src/modal/users.json')
+//     .then(res => {
+//       res.json().then(data => {
+//         showData(data);
+//       });
+//     })
+//     .catch(error => {
+//       console.log('Erro na requisição');
+//     });
+// }
 
 async function doFetchAsync() {
   const res = await fetch('./backEnd/src/modal/users.json')
@@ -29,11 +22,23 @@ async function doFetchAsync() {
   console.log(json)
 }
 
+
+function validaLogin() {
+  json.forEach(element => {
+    if (json.email = emailDigitado && json.senha) {
+
+    }
+  });
+  // ir par a tela de logado
+}
+
 function showData(data) {
   console.log(data);
   // const user = document.querySelector('#user');
   // user.textContent = data.login + ' ' + data.name;
 }
+
+
 
 function divisionPromise(a, b) {
   return new Promise((resolve, reject) => {
