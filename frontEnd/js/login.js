@@ -85,32 +85,33 @@ const botaoLogin = document.querySelector("#botaoLogin");
 
 
 botaoLogin.addEventListener('click', (event) => {
-
-  const email = userLogin.value
-  const pass = senhaLogin.value
+  const emailGlobal = userLogin.value
+  const senhaGlobal = senhaLogin.value
   verificaUser(email, pass)
 })
 
-function verificaUser(email, pass) {
+function verificaUser(emailGlobal, senhaGlobal) {
   // const json = doFetchAsync()
   const fimArquivo = json.length
   console.log(fimArquivo)
   let contador = 0
-  json.forEach(element => {
-    if (element.email == email && element.senha == pass) {
-      console.log(contador)
-      alert('Usuário ok')
-      window.location.href = "/frontEnd/pages/perfil.html"
+  //mudar o forEach pelo filter
 
+  json.forEach(element => {
+    if (element.email == emailGlobal && element.senha == senhaGlobal) {
+      // como  enviar o email e o id do user???
+      const idUserGlobal = element.id
+      window.location.href = "/frontEnd/pages/perfil.html"
     } else {
       contador = contador + 1
-      console.log('contador', contador)
-      console.log('fimArquivo', fimArquivo)
       if (contador == fimArquivo) {
         alert('Usuário senha inválidos')
       }
     }
   });
 }
+
+
+
 
 
