@@ -5,6 +5,10 @@
 //   return json
 // }
 // import { json } from '../../backEnd/src/modal/users.js'
+
+
+
+
 const json = [
   {
     "id": "01",
@@ -87,10 +91,11 @@ const botaoLogin = document.querySelector("#botaoLogin");
 botaoLogin.addEventListener('click', (event) => {
   const emailGlobal = userLogin.value
   const senhaGlobal = senhaLogin.value
-  verificaUser(email, pass)
+  const idUserGlobal = 0
+  verificaUser(emailGlobal, senhaGlobal, idUserGlobal)
 })
 
-function verificaUser(emailGlobal, senhaGlobal) {
+function verificaUser(emailGlobal, senhaGlobal, idUserGlobal) {
   // const json = doFetchAsync()
   const fimArquivo = json.length
   console.log(fimArquivo)
@@ -100,7 +105,8 @@ function verificaUser(emailGlobal, senhaGlobal) {
   json.forEach(element => {
     if (element.email == emailGlobal && element.senha == senhaGlobal) {
       // como  enviar o email e o id do user???
-      const idUserGlobal = element.id
+      idUserGlobal = element.id
+      localStorage.setItem("idUserGlobal", idUserGlobal);
       window.location.href = "/frontEnd/pages/perfil.html"
     } else {
       contador = contador + 1
@@ -109,7 +115,11 @@ function verificaUser(emailGlobal, senhaGlobal) {
       }
     }
   });
+  return idUserGlobal
 }
+
+// module.exports = verificaUser()
+
 
 
 
