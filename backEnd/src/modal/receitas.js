@@ -1,4 +1,4 @@
-[
+const receitas = [
   {
     "id": "01",
     "id_caderno": "01",
