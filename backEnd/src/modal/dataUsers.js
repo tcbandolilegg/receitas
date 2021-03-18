@@ -23,7 +23,7 @@ const json = [
     "sexo": "Feminino",
     "mae": "Aurora Rafaela",
     "pai": "Miguel Joaquim da Paz",
-    "email": "iago@teste.com",
+    "email": "norylaine@gmail.com",
     "foto": "/frontend/src/assets/images/users/norylaine.png",
     "senha": "2bbbbbb"
   },
