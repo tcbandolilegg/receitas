@@ -13,6 +13,18 @@
     "foto": "/frontend/src/assets/images/users/thereza.png",
     "senha": "1aaaaaa"
   },
+    "nome": "Thereza Cristina Bandoli Legg",
+    "idade": 54,
+    "cpf": "807.761.393-47",
+    "rg": "15.688.649-2",
+    "data_nasc": "23/03/1966",
+    "sexo": "Feminino",
+    "mae": "Sueli Raquel Elisa",
+    "pai": "Luiz Elias Ryan Farias",
+    "email": "tcbandolilegg@gmail.com",
+    "foto": "/frontend/src/assets/images/users/thereza.png",
+    "senha": "1aaaaaa"
+  },
   {
     "id": "02",
     "nome": "Norylaine de Oliveira Mangueira",

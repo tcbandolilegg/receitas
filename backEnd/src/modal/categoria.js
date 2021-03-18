@@ -1,4 +1,4 @@
-[
+const categoria = [
   {
     "id": "01",
     "decricao": "Entrada",

@@ -91,13 +91,14 @@ console.log(userPerfil[0].sexo)
 
 const dadosUser = document.querySelector('#dadosUserPerfil')
 
-
 const divUserDados = document.createElement('div');
 divUserDados.classList.add('userDados')
 console.log(divUserDados)
 
 const imageFrame = document.createElement('img')
-imageFrame.innerHTML = userPerfil[0].foto
+imageFrame.src = userPerfil[0].foto
+imageFrame.style.height = "100px"
+imageFrame.style.borderRadius = "50%"
 imageFrame.classList.add('image-perfil')
 console.log(imageFrame)
 

@@ -6,9 +6,6 @@
 // }
 // import { json } from '../../backEnd/src/modal/users.js'
 
-
-
-
 const json = [
   {
     "id": "01",
@@ -101,7 +98,13 @@ function verificaUser(emailGlobal, senhaGlobal, idUserGlobal) {
   console.log(fimArquivo)
   let contador = 0
   //mudar o forEach pelo filter
+  // let novoUserTemp = {}
+  // novoUserTemp.email = email
+  // novoUserTemp.senha = senha
 
+  // const novoUser = JSON.stringify(novoUserTemp)
+
+  // fetch(localhost: 3000 / login / emailGlobal / senhaGlobal, { method: "GET" })
   json.forEach(element => {
     if (element.email == emailGlobal && element.senha == senhaGlobal) {
       // como  enviar o email e o id do user???
