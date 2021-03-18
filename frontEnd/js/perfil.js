@@ -87,6 +87,7 @@ console.log('usuário encontrado', userPerfil)
 console.log(userPerfil[0].nome)
 console.log(userPerfil[0].email)
 console.log(userPerfil[0].sexo)
+console.log(userPerfil[0].foto)
 
 
 const dadosUser = document.querySelector('#dadosUserPerfil')
