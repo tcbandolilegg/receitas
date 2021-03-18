@@ -12,12 +12,8 @@ section {
   width: 600px;
   margin: auto;
   padding: 40px;
-<<<<<<< HEAD
   height: 500px;
   text-align: center;
-=======
-  /* height: 500px; */
->>>>>>> 18bffd23080b00c0f52755a250cb356c20c37861
 }
 
 .campo ul li {
@@ -53,4 +49,8 @@ section {
 .divBotao {
   display: flex;
   justify-content: center;
+}
+
+.inputCadastro {
+  height: 45px;
 }

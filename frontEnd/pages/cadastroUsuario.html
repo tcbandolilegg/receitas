@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="/frontEnd/src/css/inputs.css" />
     <link rel="stylesheet" href="/frontEnd/src/css/footer.css" />
     <link rel="stylesheet" href="/frontEnd/src/css/cadastroUsuario.css" />
+    <script src="/backEnd/src/modal/dataUsers.js" defer></script>
+    <script src="/frontEnd/js/cadastroUsuario.js" defer></script>
   </head>
   <body>
     <nav>
@@ -30,39 +32,59 @@
       <div class="campo">
         <div>
           <h1>Cadastro de usuário</h1>
-        <ul>
-          <li>
-            <p>Nome de Usuário</p>
-            <input placeholder="seu nome de usuário" type="text" />
-          </li>
-          <li>
-            <p>Nome</p>
-            <input placeholder="seu nome" type="text" />
-          </li>
-          <li>
-            <p>Sobrenome materno</p>
-            <input placeholder="sobrenome parte de mãe" type="text" />
-          </li>
-          <li>
-            <p>Sobrenome paterno</p>
-            <input placeholder="sobrenome parte de pai" type="text" />
-          </li>
-          <li>
-            <p>E-mail</p>
-            <input placeholder="seuemail@email.com" type="text" />
-          </li>
-          <li>
-            <p>Senha</p>
-            <input placeholder="sua senha" type="text" />
-          </li>
-          <li>
-            <p>Confirme a senha</p>
-            <input placeholder="sua senha" type="text" />
-          </li>
-        </ul>
+          <ul>
+            <li>
+              <p>Nome de Usuário</p>
+              <input
+                id="userCadastro"
+                class="inputCadastro"
+                placeholder="seu nome de usuário"
+                type="text"
+              />
+            </li>
+            <li>
+              <p>Nome</p>
+              <input
+                id="nomeCadastro"
+                class="inputCadastro"
+                placeholder="seu nome"
+                type="text"
+              />
+            </li>
+
+            <li>
+              <p>E-mail</p>
+              <input
+                id="emailCadastro"
+                class="inputCadastro"
+                placeholder="seuemail@email.com"
+                type="text"
+              />
+            </li>
+            <li>
+              <p>Senha</p>
+              <input
+                id="senhaCadastro"
+                class="inputCadastro"
+                placeholder="sua senha"
+                type="text"
+              />
+            </li>
+            <li>
+              <p>Confirme a senha</p>
+              <input
+                id="senhaCadastroConfirma"
+                class="inputCadastro"
+                placeholder="confirme sua senha"
+                type="text"
+              />
+            </li>
+          </ul>
         </div>
         <div class="divBotao">
-          <button class="botaoLaranja">salvar</button>
+          <button id="botaoSalvarUserCadastro" class="botaoLaranja">
+            salvar
+          </button>
         </div>
       </div>
     </section>
@@ -81,7 +103,10 @@
         <h1>REDES SOCIAS</h1>
         <br />
         <a class="redesSociais" href="">
-          <img src="/frontend/src/assets/images/redes_sociais/facebook_b.png" alt="Facebook" />
+          <img
+            src="/frontend/src/assets/images/redes_sociais/facebook_b.png"
+            alt="Facebook"
+          />
         </a>
         <a class="redesSociais" href="">
           <img
@@ -90,7 +115,10 @@
           />
         </a>
         <a class="redesSociais" href="">
-          <img src="/frontend/src/assets/images/redes_sociais/linkedin_b.png" alt="LinkedIn" />
+          <img
+            src="/frontend/src/assets/images/redes_sociais/linkedin_b.png"
+            alt="LinkedIn"
+          />
         </a>
         <a class="redesSociais" href="">
           <img
@@ -99,13 +127,22 @@
           />
         </a>
         <a class="redesSociais" href="">
-          <img src="/frontend/src/assets/images/redes_sociais/twitter_b.png" alt="Twitter" />
+          <img
+            src="/frontend/src/assets/images/redes_sociais/twitter_b.png"
+            alt="Twitter"
+          />
         </a>
         <a class="redesSociais" href="">
-          <img src="/frontend/src/assets/images/redes_sociais/youtube_b.png" alt="Youtube" />
+          <img
+            src="/frontend/src/assets/images/redes_sociais/youtube_b.png"
+            alt="Youtube"
+          />
         </a>
         <a class="redesSociais" href="https://wa.me/5522988399390">
-          <img src="/frontend/src/assets/images/redes_sociais/whatsapp_b.png" alt="Whatsapp" />
+          <img
+            src="/frontend/src/assets/images/redes_sociais/whatsapp_b.png"
+            alt="Whatsapp"
+          />
         </a>
       </div>
       <div class="formContato" method="get" action="">
@@ -129,7 +166,10 @@
         class="redesSociaisRodape"
         href="https://github.com/tcbandolilegg/receitas"
       >
-        <img src="/frontend/src/assets/images/redes_sociais/gitHub.png" alt="GitHub" />
+        <img
+          src="/frontend/src/assets/images/redes_sociais/gitHub.png"
+          alt="GitHub"
+        />
       </a>
     </footer>
   </body>

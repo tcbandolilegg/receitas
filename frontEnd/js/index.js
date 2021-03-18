@@ -1,8 +1,8 @@
-// window.addEventListener('load', function () {
-//   doFetch();
-//   doFetchAsync();
+window.addEventListener('load', function () {
+  //   doFetch();
+  //   doFetchAsync();
 
-// });
+});
 
 // // function doFetch() {
 // //   fetch('./backEnd/src/modal/users.json')
