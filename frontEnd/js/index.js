@@ -1,6 +1,4 @@
 window.addEventListener('load', function () {
-  //   doFetch();
-  //   doFetchAsync();
 
   const json = [
     {
@@ -82,19 +80,12 @@ window.addEventListener('load', function () {
 
   localStorage.setItem("json", JSON.stringify(json));
 
+  const btAceitarTermos = document.querySelector("#btAceitarTermos");
+  const divAceitarTermos = document.querySelector("#termos");
 
+  console.log(divAceitarTermos)
 
+  btAceitarTermos.addEventListener('click', (event) => {
+    divAceitarTermos.style.display = none
+  })
 });
-
-
-const btAceitarTermos = document.querySelector("#btAceitarTermos");
-const divAceitarTermos = document.querySelector("#termos");
-
-console.log(divAceitarTermos)
-
-
-
-
-btAceitarTermos.addEventListener('click', (event) => {
-  divAceitarTermos.style.display = none
-})

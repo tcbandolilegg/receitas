@@ -1,5 +1,6 @@
 
-json = JSON.parse(localStorage.getItem("json"))
+let json = JSON.parse(localStorage.getItem("json"))
+console.log('no login', json)
 
 const userLogin = document.querySelector("#userLogin");
 const senhaLogin = document.querySelector("#senhaLogin");
@@ -8,27 +9,29 @@ const botaoLogin = document.querySelector("#botaoLogin");
 
 botaoLogin.addEventListener('click', (event) => {
   const emailGlobal = userLogin.value
+  const userLoginGlobal = userLogin.value
   const senhaGlobal = senhaLogin.value
   const idUserGlobal = 0
-  verificaUser(emailGlobal, senhaGlobal, idUserGlobal)
+  verificaUser(emailGlobal, senhaGlobal, userLoginGlobal, idUserGlobal)
 })
 
-function verificaUser(emailGlobal, senhaGlobal, idUserGlobal) {
+function verificaUser(emailGlobal, senhaGlobal, userLoginGlobal, idUserGlobal) {
 
   const fimArquivo = json.length
   console.log(fimArquivo)
   let contador = 0
-  //mudar o forEach pelo filter
-  // let novoUserTemp = {}
-  // novoUserTemp.email = email
-  // novoUserTemp.senha = senha
 
-  // const novoUser = JSON.stringify(novoUserTemp)
-
-  // fetch(localhost: 3000 / login / emailGlobal / senhaGlobal, { method: "GET" })
   json.forEach(element => {
-    if (element.email == emailGlobal && element.senha == senhaGlobal) {
-      // como  enviar o email e o id do user???
+    console.log('email do array', element.email)
+    console.log('email do imput', emailGlobal)
+    console.log('senha do array', element.senha)
+    console.log('senha do imput', senhaGlobal)
+
+    console.log('user do array', element.userLogin)
+    console.log('user do imput', emailGlobal)
+
+    if ((element.email == emailGlobal && element.senha == senhaGlobal) || (element.userLogin == userLoginGlobal && element.senha == senhaGlobal)) {
+      console.log('ACHEI')
       idUserGlobal = element.id
       localStorage.setItem("idUserGlobal", idUserGlobal);
       window.location.href = "/frontEnd/pages/perfil.html"
