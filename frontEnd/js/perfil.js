@@ -19,7 +19,7 @@ function localizaUser(userTeste) {
 }
 
 
-const userPerfil = json.filter(localizaUser)
+const userPerfil = dataUsers.filter(localizaUser)
 console.log('usuário encontrado', userPerfil)
 console.log(userPerfil[0].nome)
 console.log(userPerfil[0].email)

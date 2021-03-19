@@ -12,8 +12,9 @@ section {
   width: 600px;
   margin: auto;
   padding: 40px;
-  height: 500px;
+  height: 600px;
   text-align: center;
+  border: solid 3px var(--dark_orange);
 }
 
 .campo ul li {

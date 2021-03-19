@@ -1,7 +1,7 @@
-let dataUsers = localStorage.getItem("dataUsers")
-let dataCadernos = localStorage.getItem("dataCadernos")
-let dataReceitas = localStorage.getItem("dataReceitas")
-let dataCategorias = localStorage.getItem("dataCategorias")
+let dataUsers = JSON.parse(localStorage.getItem("dataUsers"))
+let dataCadernos = JSON.parse(localStorage.getItem("dataCadernos"))
+let dataReceitas = JSON.parse(localStorage.getItem("dataReceitas"))
+let dataCategorias = JSON.parse(localStorage.getItem("dataCategorias"))
 
 const userCadastro = document.querySelector("#userCadastro");
 const nomeCadastro = document.querySelector("#nomeCadastro")
@@ -20,10 +20,11 @@ botaoSalvarUserCadastro.addEventListener('click', (event) => {
   const idUserGlobal = 0
 
 
-  verificaUser(userCadastroGlobal, emailCadastroGlobal)
+  verificaUser(userCadastroGlobal, nomeCadastroGlobal, emailCadastroGlobal, senhaCadastroConfirma, senhaCadastroConfirmaGlobal)
 })
 
 function verificaUser(userCadastroGlobal, nomeCadastroGlobal, emailCadastroGlobal, senhaCadastroGlobal, senhaCadastroConfirmaGlobal) {
+  console.log('PESQUISANDO EXISTENCIA')
   const fimArquivo = dataUsers.length
   let contador = 0
 
@@ -39,8 +40,8 @@ function verificaUser(userCadastroGlobal, nomeCadastroGlobal, emailCadastroGloba
     } else {
       contador = contador + 1
       if (contador == fimArquivo) {
-
-        const novoId = (userData[json.length - 1].id + 1)
+        const novoId = ('_' + Date())
+        console.log(novoId)
 
         localStorage.setItem("idUserGlobal", novoId);
 
@@ -58,8 +59,9 @@ function verificaUser(userCadastroGlobal, nomeCadastroGlobal, emailCadastroGloba
           foto: "/frontend/src/assets/images/users/augusto.png",
           senha: senhaCadastroGlobal
         }
-        json.push(UserTemp)
-        console.log(json)
+        dataUsers.push(UserTemp)
+        localStorage.setItem("dataUsers", JSON.stringify(dataUsers))
+        console.log(dataUsers)
         window.location.href = "/frontEnd/pages/perfil.html"
 
       }

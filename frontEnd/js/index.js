@@ -30,7 +30,7 @@ window.addEventListener('load', function () {
 function doDataUsers() {
   const dataUsers = [
     {
-      "id": "01",
+      "id": 01,
       "userLogin": "tcbandolilegg",
       "nome": "Thereza Cristina Bandoli Legg",
       "idade": 54,
