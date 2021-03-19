@@ -1,4 +1,4 @@
-
+var json = localStorage.getItem("json");
 
 const userLogin = document.querySelector("#userLogin");
 const senhaLogin = document.querySelector("#senhaLogin");
