@@ -1,4 +1,4 @@
-const categoria = [
+const dataCategoria = [
   {
     "id": "01",
     "decricao": "Entrada",

@@ -1,10 +1,14 @@
 
-let json = JSON.parse(localStorage.getItem("json"))
-console.log('no login', json)
+let dataUsers = JSON.parse(localStorage.getItem("dataUsers"))
+console.log('no login', dataUsers)
 
 const userLogin = document.querySelector("#userLogin");
 const senhaLogin = document.querySelector("#senhaLogin");
 const botaoLogin = document.querySelector("#botaoLogin");
+const botaoEsqueciSenha = document.querySelector("#botaoEsqueciSenha");
+const botaoNaoTenhoLogin = document.querySelector("#botaoNaoTenhoLogin");
+
+
 
 
 botaoLogin.addEventListener('click', (event) => {
@@ -15,13 +19,14 @@ botaoLogin.addEventListener('click', (event) => {
   verificaUser(emailGlobal, senhaGlobal, userLoginGlobal, idUserGlobal)
 })
 
+
 function verificaUser(emailGlobal, senhaGlobal, userLoginGlobal, idUserGlobal) {
 
-  const fimArquivo = json.length
+  const fimArquivo = dataUsers.length
   console.log(fimArquivo)
   let contador = 0
 
-  json.forEach(element => {
+  dataUsers.forEach(element => {
     console.log('email do array', element.email)
     console.log('email do imput', emailGlobal)
     console.log('senha do array', element.senha)
