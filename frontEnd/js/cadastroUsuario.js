@@ -1,12 +1,10 @@
 const userCadastro = document.querySelector("#userCadastro");
-const senhaCadastro = document.querySelector("#senhaCadastro");
-const botaoSalvarUserCadastro = document.querySelector("#botaoSalvarUserCadastro");
-const userCadastro = document.querySelector("#userCadastro")
 const nomeCadastro = document.querySelector("#nomeCadastro")
 const emailCadastro = document.querySelector("#emailCadastro")
 const senhaCadastro = document.querySelector("#senhaCadastro")
 const senhaCadastroConfirma = document.querySelector("#senhaCadastroConfirma")
 
+const botaoSalvarUserCadastro = document.querySelector("#botaoSalvarUserCadastro");
 
 botaoSalvarUserCadastro.addEventListener('click', (event) => {
   const userCadastroGlobal = userCadastro.value
@@ -35,29 +33,30 @@ function verificaUser(userCadastroGlobal, nomeCadastroGlobal, emailCadastroGloba
       alert('Usuário já existe')
       // como  enviar o email e o id do user???
     } else {
-      const novoId = json.length + 1
-      localStorage.setItem("idUserGlobal", novoId);
-
-      const UserTemp = {
-        id: novoId,
-        userLogin: userCadastroGlobal,
-        nome: nomeCadastroGlobal,
-        cpf: "",
-        rg: "",
-        data_nasc: "",
-        sexo: "",
-        mae: "",
-        pai: "",
-        email: emailCadastroGlobal,
-        foto: "/frontend/src/assets/images/users/augusto.png",
-        senha: senhaCadastroGlobal
-      }
-      json.push(UserTemp)
-
-      window.location.href = "/frontEnd/pages/perfil.html"
       contador = contador + 1
       if (contador == fimArquivo) {
-        alert('Usuário senha inválidos')
+
+        const novoId = json.length + 1
+        localStorage.setItem("idUserGlobal", novoId);
+
+        const UserTemp = {
+          id: novoId,
+          userLogin: userCadastroGlobal,
+          nome: nomeCadastroGlobal,
+          cpf: "",
+          rg: "",
+          data_nasc: "",
+          sexo: "",
+          mae: "",
+          pai: "",
+          email: emailCadastroGlobal,
+          foto: "/frontend/src/assets/images/users/augusto.png",
+          senha: senhaCadastroGlobal
+        }
+        json.push(UserTemp)
+        console.log(json)
+        window.location.href = "/frontEnd/pages/perfil.html"
+
       }
     }
   });
