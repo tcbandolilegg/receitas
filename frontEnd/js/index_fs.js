@@ -1,3 +1,11 @@
+
+const btAceitarTermos = document.querySelector("#aceitarTermos");
+const divAceitarTermos = document.querySelector("#termos");
+
+btAceitarTermos.addEventListener('click', (event) => {
+  divAceitarTermos.style.display = none
+})
+
 import {
   promises as fs,
   writeFile

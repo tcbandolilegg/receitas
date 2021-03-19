@@ -95,6 +95,7 @@ const dadosUser = document.querySelector('#dadosUserPerfil')
 
 const divUserDados = document.createElement('div');
 divUserDados.classList.add('userDados')
+
 console.log(divUserDados)
 
 const imageFrame = document.createElement('img')
