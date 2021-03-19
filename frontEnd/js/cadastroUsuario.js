@@ -1,3 +1,5 @@
+json = JSON.parse(localStorage.getItem("json"))
+
 const userCadastro = document.querySelector("#userCadastro");
 const nomeCadastro = document.querySelector("#nomeCadastro")
 const emailCadastro = document.querySelector("#emailCadastro")

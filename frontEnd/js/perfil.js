@@ -1,5 +1,5 @@
 var idUserGlobal = localStorage.getItem("idUserGlobal");
-var json = localStorage.getItem("json");
+json = JSON.parse(localStorage.getItem("json"))
 console.log('chegandoValor', idUserGlobal)
 
 // const json = [
