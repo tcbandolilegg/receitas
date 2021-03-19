@@ -10,9 +10,7 @@ const senhaCadastroConfirma = document.querySelector("#senhaCadastroConfirma")
 
 botaoSalvarUserCadastro.addEventListener('click', (event) => {
   const userCadastroGlobal = userCadastro.value
-  const senhaCadastroGlobal = senhaCadastro.value
-  const botaoSalvarUserCadastroGlobal = botaoSalvarUserCadastro.value
-  const userCadastroGlobal = userCadastro.value
+  // const botaoSalvarUserCadastroGlobal = botaoSalvarUserCadastro.value
   const nomeCadastroGlobal = nomeCadastro.value
   const emailCadastroGlobal = emailCadastro.value
   const senhaCadastroGlobal = senhaCadastro.value
@@ -22,7 +20,7 @@ botaoSalvarUserCadastro.addEventListener('click', (event) => {
   verificaUser(userCadastroGlobal, emailCadastroGlobal)
 })
 
-function verificaUser(userCadastroGlobal, emailCadastroGlobal) {
+function verificaUser(userCadastroGlobal, nomeCadastroGlobal, emailCadastroGlobal, senhaCadastroGlobal, senhaCadastroConfirmaGlobal) {
   const fimArquivo = json.length
   let contador = 0
   //mudar o forEach pelo filter
@@ -36,10 +34,27 @@ function verificaUser(userCadastroGlobal, emailCadastroGlobal) {
     if (element.email == emailCadastroGlobal || element.senha == userCadastroGlobal) {
       alert('Usuário já existe')
       // como  enviar o email e o id do user???
-      idUserGlobal = element.id
-      localStorage.setItem("idUserGlobal", idUserGlobal);
-      window.location.href = "/frontEnd/pages/perfil.html"
     } else {
+      const novoId = json.length + 1
+      localStorage.setItem("idUserGlobal", novoId);
+
+      const UserTemp = {
+        id: novoId,
+        userLogin: userCadastroGlobal,
+        nome: nomeCadastroGlobal,
+        cpf: "",
+        rg: "",
+        data_nasc: "",
+        sexo: "",
+        mae: "",
+        pai: "",
+        email: emailCadastroGlobal,
+        foto: "/frontend/src/assets/images/users/augusto.png",
+        senha: senhaCadastroGlobal
+      }
+      json.push(UserTemp)
+
+      window.location.href = "/frontEnd/pages/perfil.html"
       contador = contador + 1
       if (contador == fimArquivo) {
         alert('Usuário senha inválidos')
