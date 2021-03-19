@@ -1,4 +1,4 @@
-const json = [
+[
   {
     "id": 1,
     "userLogin": "tcbandolilegg",
@@ -15,7 +15,7 @@ const json = [
     "senha": "1aaaaaa"
   },
   {
-    "id": 02,
+    "id": 2,
     "userLogin": "",
     "nome": "Norylaine de Oliveira Mangueira",
     "idade": 31,
@@ -30,7 +30,7 @@ const json = [
     "senha": "2bbbbbb"
   },
   {
-    "id": 03,
+    "id": 3,
     "userLogin": "",
     "nome": "Natália Valentim",
     "idade": 42,
@@ -45,7 +45,7 @@ const json = [
     "senha": "3cccccc"
   },
   {
-    "id": 04,
+    "id": 4,
     "userLogin": "",
     "nome": "Alexandre Enzo Assis",
     "idade": 64,
@@ -60,7 +60,7 @@ const json = [
     "senha": "4dddddd"
   },
   {
-    "id": 05,
+    "id": 5,
     "userLogin": "",
     "nome": "Augusto Bryan Ruan Fernandes",
     "idade": 73,

@@ -1,0 +1,28 @@
+{
+  "name": "receitas",
+  "version": "1.0.0",
+  "description": "Sistema  de  criação de  cadernos de receitas de família",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon /frontEnd/js/index_fs.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tcbandolilegg/receitas.git"
+  },
+  "keywords": [
+    "receitas"
+  ],
+  "author": "Thereza Cristina & Norylaine Mangueira",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/tcbandolilegg/receitas/issues"
+  },
+  "homepage": "https://github.com/tcbandolilegg/receitas#readme",
+  "devDependencies": {
+    "express": "^4.17.1"
+  }
+}
