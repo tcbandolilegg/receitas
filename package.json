@@ -2,7 +2,7 @@
   "name": "receitas",
   "version": "1.0.0",
   "description": "Sistema  de  criação de  cadernos de receitas de família",
-  "main": "server.js",
+  "main": "index_fs.js",
   "scripts": {
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
