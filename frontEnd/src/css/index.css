@@ -182,3 +182,17 @@ img:hover {
   -webkit-filter: none;
   filter: none;
 }
+
+.termos{
+  position: fixed;
+  top: 550px;
+  left: 140px;
+  align-items: center;
+  z-index: 1;
+  display: flex;
+  background-color: var(--ligth_yellow);
+  height: 100px;
+  justify-content: space-around;
+  width: 80%;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.246);
+}
