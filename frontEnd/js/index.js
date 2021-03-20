@@ -25,6 +25,11 @@ window.addEventListener('load', function () {
   btAceitarTermos.addEventListener('click', (event) => {
     divAceitarTermos.style.display = 'none'
   })
+
+  doEmAlta()
+
+
+
 });
 
 function doDataUsers() {
@@ -103,6 +108,21 @@ function doDataUsers() {
       "email": "augusto@teste.com",
       "foto": "/frontend/src/assets/images/users/augusto.png",
       "senha": "5eeeeee"
+    },
+    {
+      "id": 06,
+      "userLogin": "",
+      "nome": "Maria Bethânia Viana Teles Veloso",
+      "idade": 74,
+      "cpf": "567.984.949-67",
+      "rg": "45.894.039-0",
+      "data_nasc": "18/06/1946",
+      "sexo": "Feminino",
+      "mae": "Canô Veloso",
+      "pai": "Zeca Veloso",
+      "email": "bethania@teste.com",
+      "foto": "https://i3.wp.com/farolnews.com.br/wp-content/uploads/2018/07/1_OSL0Xvdt39JMCKdJwcSlrQ-1-1160x640.jpeg",
+      "senha": "6ffffff"
     }
   ]
 
@@ -297,4 +317,33 @@ function dataBlog() {
     }
   ]
   localStorage.setItem("dataBlog", JSON.stringify(Blog))
+}
+
+function doEmAlta() {
+  const emAlta = document.querySelector('#EmAlta')
+  const dataReceitas = localStorage.getItem("dataReceitas")
+  const dataReceitasSort = dataReceitas.sort(compararNumeros)
+  /// fazer o sorte e separar as 4 primeiras
+  for (i = 0; i < 4; i++) {
+    const receitaEmAlta = document.createElement('div')
+    receitaEmAlta.classList.add('receitasEmAlta')
+    const fotoReceita = document.createElement('img')
+    fotoReceita.classList.add('fotoReceitaEmAlta')
+    const nomeReceita = document.createElement('p')
+    nomeReceita.classList.add('nomeReceitaEmAlta')
+    const quemCriouReceita = document.createElement.add('quemCriouReceitaEmAlta')
+    quemCriouReceita.innerHTML = dataReceitasSort[i].quem_criou_receita
+    nomeReceita.innerHTML = dataReceitasSort[i].nome_receita
+    fotoReceita.src = dataReceitasSort[i].foto
+    receitaEmAlta.appendChild(fotoReceita)
+    receitaEmAlta.appendChild(quemCriouReceita)
+    receitaEmAlta.appendChild(nomeReceita)
+    emAlta.appendChild(receitaEmAlta)
+  }
+
+  function compararNumeros(a, b) {
+    return a.numero_de_visualizacoes - b.numero_de_visualizacoes;
+  }
+
+
 }

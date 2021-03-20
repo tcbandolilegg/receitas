@@ -4,7 +4,7 @@ const receitas = [
     "id_caderno": "01",
     "id_user": "01",
     "quem_criou_receita": "Vovó Olga",
-    "foto": "",
+    "foto": "https://files.agoramt.com.br/2019/07/bife-parmegiana.jpg",
     "categoria": "01",
     "nome_receita": "Bife à Parmegiana de Forno",
     "ingredientes": "1 ½ xícara (chá) de tomates sem sementes e picados (270 g), Azeite, tomilho, alho, sal e pimenta a gosto,       4 bifes de contra filé temperados com alho, sal e pimenta (450 g),       4 ovos batidos para empanar,       Farinha de rosca para empanar,      4 fatias de presunto (100 g),       8 fatias de muçarela (150 g),       Molho de tomate,      1 kg de tomate,      30 g de manteiga,      Sal e pimenta do reino moída a gosto, 30 g de queijo parmesão ralado",
@@ -19,7 +19,7 @@ const receitas = [
     "id_caderno": "01",
     "id_user": "02",
     "quem_criou_receita": "Vovó Ernesta",
-    "foto": "",
+    "foto": "https://www.google.com/url?sa=i&url=https%3A%2F%2Freceitas.ig.com.br%2Fgelado-de-doce-de-leite-com-calda-de-frutas-vermelhas-e-farofa-de-amendoim%2F4e850d5f59544a2a760000c2.html&psig=AOvVaw2dud6WHarknpr77R7FP684&ust=1616358012531000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCID2yv3Yv-8CFQAAAAAdAAAAABAD",
     "categoria": "01",
     "nome_receita": "Gelado de Doce de Leite",
     "ingredientes": "1 pacote de biscoito recheado de chocolate triturado (140g), 50g de manteiga sem sal (¼ xícara de chá), 200g de doce de leite (¾ xícara de chá), 250g de sorvete de creme (1 ½ xícara de chá), 300ml de creme de leite fresco batido em ponto de chantilly (1 ¼ xícara de chá)  ",
@@ -33,7 +33,7 @@ const receitas = [
     "id_caderno": "01",
     "id_user": "01",
     "quem_criou_receita": "Vovó Jóia",
-    "foto": "",
+    "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZvMZH0X6cnsah-obe8roC7ix7qmL2d8cXOA&usqp=CAU",
     "categoria": "01",
     "nome_receita": "Empada de arroz",
     "ingredientes": "Massa ->  ½ xícara (chá) de leite (120ml) ,1 ovo, 1 ½ xícara de arroz branco cozido,½ cenoura com casca picada,½ xícara (chá) de amido de milho,50g de queijo muçarela ralada no ralo grosso,25g de queijo parmesão ralado,Salsinha picadinha e sal a gosto,½ colher (sopa) de fermento em pó,Recheio,200g de frango temperado, cozido e desfiado,75g de requeijão cremoso (¾ xícara de chá)",
@@ -47,7 +47,7 @@ const receitas = [
     "id_caderno": "01",
     "id_user": "01",
     "quem_criou_receita": "Vovó Marina",
-    "foto": "",
+    "foto": "https://www.prazeresdamesa.com.br/wp-content/uploads/2019/03/1C7A8913Rjcastilho-Copia.jpg",
     "categoria": "02",
     "nome_receita": "Bolo de Brownie com Doce de Leite e Ganache de Chocolate",
     "ingredientes": "Cobertura - > ,1 1/2kg de pasta americana pronta, Anilina em gel nas cores, amarelo, verde, vermelho, laranja, preta, prata, dourada e rosa bebê,3 potes grandes de gel para papel de arroz,2 folhas de papel de arroz com as fotos para montar a tira,Cola para pasta americana,12 colheres de sopa de pó para glacê real,1 saco de confeitar, 1 matriz, 1 bico perlê pequeno,Massa de baunilha -> 400 g de margarina,04 xícaras de chá de açúcar,06 ovos,06 xícaras de chá de farinha de trigo,02 xícaras de chá de leite integral,02 colheres (sopa) de fermento em pó,02 colheres (sopa) de essência de baunilha branca,Massa de Brownie -> ,4 ovos,200g de açúcar,5 g de sal,200 g de chocolate meio amargo,250 g de manteiga sem sal,75g de chocolate meio amargo picado,80 g de nozes picadas,150 g de farinha de trigo,Recheio de doce de leite ->,2 latas de leite condensado,Recheio de Ganache de Chocolate meio amargo,500 g de chocolate meio amargo,02 caixas de creme de leite,02 colheres (sopa) de margarina,Calda -> 3 copos americanos de água,1 copo americano de açúcar",
@@ -61,7 +61,7 @@ const receitas = [
     "id_caderno": "02",
     "id_user": "02",
     "quem_criou_receita": "Dona Canô",
-    "foto": "",
+    "foto": "http://imagem.band.com.br/31/f_311131.jpg",
     "categoria": "01",
     "nome_receita": "Bolo de aipim",
     "ingredientes": "1kg de aipim ralado; Leite de 1 coco; 1 xícara e meia de açúcar; 1 colher de chá de sal; 1 colher de sopa de manteiga derretida.",
@@ -69,5 +69,6 @@ const receitas = [
     "modo_preparo_audio": "",
     "data_insercao": "19/03/2021 22:56:00",
     "numero_de_visualizacoes": "0"
+
   }
 ]
