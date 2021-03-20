@@ -340,6 +340,8 @@ function doEmAlta() {
 
   console.log('dataReceitas sorteada *****************', dataReceitasSort)
   /// fazer o sorte e separar as 4 primeiras
+  const espaco = document.createElement('br')
+  console.log('ESPAÇOOOOOOOOOOOOOOOOOOOOOOOOOOO', espaco)
   for (i = 0; i < 5; i++) {
 
     const receitaEmAlta = document.createElement('div')
@@ -355,10 +357,13 @@ function doEmAlta() {
     quemCriouReceitaEmAlta.innerHTML = dataReceitasSort[i].quem_criou_receita
 
     receitaEmAlta.appendChild(fotoReceitaEmAlta)
+    receitaEmAlta.appendChild(espaco)
+    receitaEmAlta.appendChild(espaco)
     receitaEmAlta.appendChild(quemCriouReceitaEmAlta)
     receitaEmAlta.appendChild(nomeReceitaEmAlta)
     emAlta.appendChild(receitaEmAlta)
     console.log('to no for coloquei', dataReceitasSort[i])
+    console.log('o que colocquei na dive em ALTAAA', emAlta)
   }
 
   function visualizacoes(a, b) {
