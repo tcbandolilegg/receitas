@@ -55,5 +55,19 @@ const receitas = [
     "modo_preparo_audio": "",
     "data_insercao": "11/03/2021 21:52:00",
     "numero_de_visualizacoes": "0"
+  },
+  {
+    "id": "05",
+    "id_caderno": "02",
+    "id_user": "02",
+    "quem_criou_receita": "Dona Canô",
+    "foto": "",
+    "categoria": "01",
+    "nome_receita": "Bolo de aipim",
+    "ingredientes": "1kg de aipim ralado; Leite de 1 coco; 1 xícara e meia de açúcar; 1 colher de chá de sal; 1 colher de sopa de manteiga derretida.",
+    "modo_preparo_texto": "Juntar o aipim ralado com o leite de coco, o açúcar, o sal e a manteiga. Misturar bem e colocar numa assadeira untada e polvilhada com farinha de trigo. Enquanto estiver assando, colocar por cima um pouco de leite de coco sem água, para que o bolo fique com uma cor bonita.",
+    "modo_preparo_audio": "",
+    "data_insercao": "19/03/2021 22:56:00",
+    "numero_de_visualizacoes": "0"
   }
 ]
