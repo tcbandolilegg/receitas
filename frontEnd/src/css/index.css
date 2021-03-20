@@ -197,8 +197,32 @@ img:hover {
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.246);
 }
 
-#btAceitarTermos{
+#btAceitarTermos {
   width: 200px;
-  background-color: var(--medium_blue)
+  background-color: var(--medium_blue);
 }
- 
+
+#divEmAlta {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+.receitasEmAlta {
+  text-align: center;
+  align-items: center;
+  max-width: 200px;
+}
+
+.fotoReceitaEmAlta {
+  border-radius: 25%;
+  height: 100px;
+  width: 150px;
+}
+.nomeReceitaEmAlta {
+  font-style: italic;
+}
+.quemCriouReceitaEmAlta {
+  font-weight: bolder;
+}
