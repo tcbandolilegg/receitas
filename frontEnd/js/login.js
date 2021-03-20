@@ -35,8 +35,9 @@ function verificaUser(emailGlobal, senhaGlobal, userLoginGlobal, idUserGlobal) {
     console.log('user do array', element.userLogin)
     console.log('user do imput', emailGlobal)
 
-    if ((element.email == emailGlobal && element.senha == senhaGlobal) || (element.userLogin == userLoginGlobal && element.senha == senhaGlobal)) {
+    if (((element.email.toUpperCase()) == (emailGlobal.toUpperCase()) && (element.senha.toUpperCase()) == (senhaGlobal.toUpperCase())) || ((element.userLogin.toUpperCase()) == (userLoginGlobal.toUpperCase()) && (element.senha.toUpperCase()) == (senhaGlobal.toUpperCase()))) {
       console.log('ACHEI')
+      console.log('idUserGlobal', idUserGlobal)
       idUserGlobal = element.id
       localStorage.setItem("idUserGlobal", idUserGlobal);
       window.location.href = "/frontEnd/pages/perfil.html"
