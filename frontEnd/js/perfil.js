@@ -77,10 +77,10 @@ dataCadernos.forEach(element => {
   console.log('element idUser', element.idUser)
   console.log(idUserGlobal)
   if (element.idUser = idUserGlobal) {
+
     console.log('AAAAAAAAAAAAAAAAAAAAAAAAAAAachei caderno')
     const entradaCaderno = document.createElement('p')
     entradaCaderno.classList.add('cadernos')
-
     entradaCaderno.innerHTML = 'Família: ' + element.descricao + '........Origem: ' + element.origem
     divCadernos.appendChild(entradaCaderno)
   } else {
