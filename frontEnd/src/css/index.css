@@ -226,3 +226,12 @@ img:hover {
 .quemCriouReceitaEmAlta {
   font-weight: bolder;
 }
+
+.botaoFale:hover {
+  background-color: var(--mustard);
+  color: black;
+}
+
+.botaoFale{
+  margin-left: 0;
+}
