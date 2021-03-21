@@ -1,86 +1,97 @@
-let idUserGlobal = localStorage.getItem("idUserGlobal");
-let dataUsers = JSON.parse(localStorage.getItem("dataUsers"))
-let dataCadernos = JSON.parse(localStorage.getItem("dataCadernos"))
-let dataCategorias = JSON.parse(localStorage.getItem("dataCategorias"))
-let dataReceitas = JSON.parse(localStorage.getItem("dataReceitas"))
-console.log('chegando Valor de id', idUserGlobal)
+let idUserGlobal = localStorage.getItem('idUserGlobal');
+let dataUsers = JSON.parse(localStorage.getItem('dataUsers'))
+let dataCadernos = JSON.parse(localStorage.getItem('dataCadernos'))
+let dataCategorias = JSON.parse(localStorage.getItem('dataCategorias'))
+let dataReceitas = JSON.parse(localStorage.getItem('dataReceitas'))
+
 
 function localizaUser(userTeste) {
-  console.log('User ID', userTeste.id)
-  console.log('User Global', idUserGlobal)
+
   if (userTeste.id == idUserGlobal) {
-    console.log('ENCONTREI DENTRO DA FUNCTON', userTeste)
+
     return userTeste
   }
 }
 
 const userPerfil = dataUsers.filter(localizaUser)
-console.log('usuário encontrado', userPerfil)
-console.log(userPerfil[0].nome)
-console.log(userPerfil[0].email)
-console.log(userPerfil[0].sexo)
-console.log(userPerfil[0].foto)
+
 
 
 const dadosUser = document.querySelector('#dadosUserPerfil')
-dadosUser.style.dysplay = "flex"
+dadosUser.style.dysplay = 'flex'
 dadosUser.style.flexDirection = 'column'
+
+
+
 
 const divUserDados = document.createElement('div');
 divUserDados.classList.add('userDados')
+divUserDados.style.display = 'flex'
+divUserDados.style.flexWrap = 'wrap'
+divUserDados.style.marginBottom = '20px'
+
+
+
+const divUserFoto = document.createElement('div');
+divUserFoto.classList.add('divFotoUser')
 
 const divUserDescricao = document.createElement('div')
 divUserDescricao.classList.add('userDescrecao')
+divUserDescricao.style.marginLeft = '50px'
+divUserDescricao.style.display = 'flex'
+divUserDescricao.style.flexDirection = 'column'
+// divUserDescricao.style.alignItems = 'center'
+divUserDescricao.style.justifyItems = 'center'
+divUserDescricao.style.justifyContent = 'left'
+divUserDescricao.style.alignSelf = 'center'
+
 
 const espaco = document.createElement('br')
-console.log(divUserDados)
 
-const imageFrame = document.createElement('img')
-imageFrame.src = userPerfil[0].foto
-imageFrame.style.height = "100px"
-imageFrame.style.borderRadius = "50%"
-imageFrame.classList.add('image-perfil')
-console.log(imageFrame)
+
+const fotoUser = document.createElement('img')
+fotoUser.src = userPerfil[0].foto
+fotoUser.style.height = '100px'
+fotoUser.style.borderRadius = '50%'
+fotoUser.classList.add('imagePerfil')
+
 
 const nameUser = document.createElement('h2')
 nameUser.innerHTML = userPerfil[0].nome
 nameUser.classList.add('nameUser')
-console.log(nameUser)
+
 
 const email = document.createElement('p')
 email.innerHTML = userPerfil[0].email
-email.classList.add('email')
-console.log(email)
+email.classList.add('emailUser')
+
 
 
 const botaoEditarPerfil = document.createElement('button')
 botaoEditarPerfil.innerHTML = 'Editar Perfil'
 botaoEditarPerfil.classList.add('botaoLaranja')
 
-const botaoCriarReceitas = document.createElement('button')
-botaoCriarReceitas.innerHTML = 'Criar Receitas'
-botaoCriarReceitas.classList.add('botaoLaranja')
 
 
 const divCadernos = document.createElement('div')
 divCadernos.classList.add('divCadernos')
 divCadernos.style.justifyContent = 'space-around'
 
-const divReceitas = document.createElement('div')
-divReceitas.classList.add('divRceitas')
-divReceitas.style.justifyContent = 'space-around'
-
-
+const tituloCaderno = document.createElement('h2')
+tituloCaderno.style.fontSize = 'large'
+tituloCaderno.style.fontWeight = 'bold'
+tituloCaderno.style.textAlign = 'center'
+tituloCaderno.style.marginBottom = '10px'
+tituloCaderno.innerHTML = 'Meus Cadernos'
 
 dataCadernos.forEach(element => {
-  console.log('No foreach dos cadernos')
-  console.log('element idUser', element.idUser)
-  console.log(idUserGlobal)
-  if (element.idUser = idUserGlobal) {
 
-    console.log('AAAAAAAAAAAAAAAAAAAAAAAAAAAachei caderno')
+  if (element.idUser == idUserGlobal) {
+
+
     const entradaCaderno = document.createElement('p')
     entradaCaderno.classList.add('cadernos')
+    entradaCaderno.style.marginBottom = '5px'
     entradaCaderno.innerHTML = 'Família: ' + element.descricao + '........Origem: ' + element.origem
     divCadernos.appendChild(entradaCaderno)
   } else {
@@ -94,15 +105,27 @@ botaoCriarCaderno.innerHTML = 'Criar Caderno'
 botaoCriarCaderno.classList.add('botaoLaranja')
 
 
-dataReceitas.forEach(element => {
-  console.log('No foreach dos cadernos')
-  console.log('element idUser', element.idUser)
-  console.log(idUserGlobal)
 
-  if (element.id_user = idUserGlobal) {
-    console.log('AAAAAAAAAAAAAAAAAAAAAAAAAAAachei receita')
+const divReceitas = document.createElement('div')
+divReceitas.classList.add('divRceitas')
+divReceitas.style.justifyContent = 'space-around'
+
+const tituloReceita = document.createElement('h2')
+tituloReceita.style.fontSize = 'large'
+tituloReceita.style.fontWeight = 'bold'
+tituloReceita.style.textAlign = 'center'
+tituloReceita.style.marginBottom = '10px'
+
+tituloReceita.innerHTML = 'Minhas Receitas'
+
+dataReceitas.forEach(element => {
+
+
+  if (element.idUser == idUserGlobal) {
+
     const entradaReceita = document.createElement('p')
     entradaReceita.classList.add('receitas')
+    entradaReceita.style.marginBottom = '5px'
     entradaReceita.innerHTML = element.nome_receita + ' da ' + element.quem_criou_receita
     divReceitas.appendChild(entradaReceita)
 
@@ -113,14 +136,21 @@ dataReceitas.forEach(element => {
 });
 
 
-divUserDescricao.appendChild(espaco)
+const botaoCriarReceitas = document.createElement('button')
+botaoCriarReceitas.innerHTML = 'Criar Receitas'
+botaoCriarReceitas.classList.add('botaoLaranja')
+
+
+divUserFoto.appendChild(fotoUser)
+
 divUserDescricao.appendChild(nameUser)
 divUserDescricao.appendChild(email)
+divUserDescricao.appendChild(espaco)
 
-divUserDados.appendChild(imageFrame)
+divUserDados.appendChild(divUserFoto)
 divUserDados.appendChild(divUserDescricao)
-divUserDados.appendChild(espaco)
-console.log(divUserDados)
+
+
 
 dadosUser.appendChild(divUserDados)
 dadosUser.appendChild(espaco)
@@ -128,19 +158,26 @@ dadosUser.appendChild(espaco)
 dadosUser.appendChild(botaoEditarPerfil)
 dadosUser.appendChild(espaco)
 dadosUser.appendChild(espaco)
+
+dadosUser.appendChild(tituloCaderno)
+dadosUser.appendChild(espaco)
 dadosUser.appendChild(espaco)
 dadosUser.appendChild(divCadernos)
 dadosUser.appendChild(espaco)
 dadosUser.appendChild(espaco)
-dadosUser.appendChild(espaco)
 dadosUser.appendChild(botaoCriarCaderno)
-dadosUser.appendChild(divReceitas)
 dadosUser.appendChild(espaco)
+dadosUser.appendChild(espaco)
+
+dadosUser.appendChild(tituloReceita)
+dadosUser.appendChild(espaco)
+dadosUser.appendChild(espaco)
+dadosUser.appendChild(divReceitas)
 dadosUser.appendChild(espaco)
 dadosUser.appendChild(espaco)
 dadosUser.appendChild(botaoCriarReceitas)
 
-console.log(dadosUser)
+
 
 
 // }

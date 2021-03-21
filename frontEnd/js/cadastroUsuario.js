@@ -24,7 +24,7 @@ botaoSalvarUserCadastro.addEventListener('click', (event) => {
 })
 
 function verificaUser(userCadastroGlobal, nomeCadastroGlobal, emailCadastroGlobal, senhaCadastroGlobal, senhaCadastroConfirmaGlobal) {
-  console.log('PESQUISANDO EXISTENCIA')
+
   const fimArquivo = dataUsers.length
   let contador = 0
 
