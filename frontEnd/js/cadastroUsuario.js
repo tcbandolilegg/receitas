@@ -15,23 +15,19 @@ botaoSalvarUserCadastro.addEventListener('click', (event) => {
   const userCadastroGlobal = userCadastro.value
   const nomeCadastroGlobal = nomeCadastro.value
   const emailCadastroGlobal = emailCadastro.value
+  const fotoCadastroGlobal = fotoCadastro.value
   const senhaCadastroGlobal = senhaCadastro.value
   const senhaCadastroConfirmaGlobal = senhaCadastroConfirma.value
   const idUserGlobal = 0
 
 
-  verificaUser(userCadastroGlobal, nomeCadastroGlobal, emailCadastroGlobal, senhaCadastroConfirma, senhaCadastroConfirmaGlobal)
+  verificaUser(userCadastroGlobal, nomeCadastroGlobal, emailCadastroGlobal, senhaCadastroConfirma, senhaCadastroConfirmaGlobal, fotoCadastroGlobal)
 })
 
-function verificaUser(userCadastroGlobal, nomeCadastroGlobal, emailCadastroGlobal, senhaCadastroGlobal, senhaCadastroConfirmaGlobal) {
+function verificaUser(userCadastroGlobal, nomeCadastroGlobal, emailCadastroGlobal, senhaCadastroGlobal, senhaCadastroConfirmaGlobal, fotoCadastroGlobal) {
 
   const fimArquivo = dataUsers.length
   let contador = 0
-
-  // let novoUserTemp = {}
-  // novoUserTemp.email = email
-  // novoUserTemp.senha = senha
-  // const novoUser = JSON.stringify(novoUserTemp)
 
 
   dataUsers.forEach(element => {
@@ -56,8 +52,9 @@ function verificaUser(userCadastroGlobal, nomeCadastroGlobal, emailCadastroGloba
           mae: "",
           pai: "",
           email: emailCadastroGlobal,
-          foto: "/frontend/src/assets/images/users/augusto.png",
+          foto: fotoCadastroGlobal,
           senha: senhaCadastroGlobal
+
         }
         dataUsers.push(UserTemp)
         localStorage.setItem("dataUsers", JSON.stringify(dataUsers))

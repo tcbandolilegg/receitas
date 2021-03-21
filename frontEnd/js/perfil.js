@@ -14,7 +14,7 @@ function localizaUser(userTeste) {
 }
 
 const userPerfil = dataUsers.filter(localizaUser)
-
+console.log(userPerfil)
 
 
 const dadosUser = document.querySelector('#dadosUserPerfil')
@@ -50,6 +50,8 @@ const espaco = document.createElement('br')
 
 
 const fotoUser = document.createElement('img')
+console.log(userPerfil[0].foto)
+
 fotoUser.src = userPerfil[0].foto
 fotoUser.style.height = '100px'
 fotoUser.style.borderRadius = '50%'
@@ -73,6 +75,7 @@ botaoEditarPerfil.classList.add('botaoLaranja')
 
 
 
+
 const divCadernos = document.createElement('div')
 divCadernos.classList.add('divCadernos')
 divCadernos.style.justifyContent = 'space-around'
@@ -84,18 +87,26 @@ tituloCaderno.style.textAlign = 'center'
 tituloCaderno.style.marginBottom = '10px'
 tituloCaderno.innerHTML = 'Meus Cadernos'
 
+let contadorCadernos = 0
+const fimArquivoCadernos = dataCadernos.length
+
 dataCadernos.forEach(element => {
-
   if (element.idUser == idUserGlobal) {
-
-
     const entradaCaderno = document.createElement('p')
+
     entradaCaderno.classList.add('cadernos')
     entradaCaderno.style.marginBottom = '5px'
     entradaCaderno.innerHTML = 'Família: ' + element.descricao + '........Origem: ' + element.origem
     divCadernos.appendChild(entradaCaderno)
   } else {
-    console.log('Deus ruiiiiiiiiiiiiiiiiiiiiiiiiiiin no forEach')
+    contadorCadernos = contadorCadernos + 1
+    if (contadorCadernos == fimArquivoCadernos) {
+      const entradaCaderno = document.createElement('p')
+      entradaCaderno.classList.add('cadernos')
+      entradaCaderno.style.marginBottom = '5px'
+      entradaCaderno.innerHTML = 'Não Possui cadernos cadastrados'
+      divCadernos.appendChild(entradaCaderno)
+    }
   }
 
 });
@@ -118,11 +129,13 @@ tituloReceita.style.marginBottom = '10px'
 
 tituloReceita.innerHTML = 'Minhas Receitas'
 
+const fimArquivoReceitas = dataReceitas.length
+let contadorReceitas = 0
 dataReceitas.forEach(element => {
 
 
-  if (element.idUser == idUserGlobal) {
 
+  if (element.idUser == idUserGlobal) {
     const entradaReceita = document.createElement('p')
     entradaReceita.classList.add('receitas')
     entradaReceita.style.marginBottom = '5px'
@@ -130,7 +143,14 @@ dataReceitas.forEach(element => {
     divReceitas.appendChild(entradaReceita)
 
   } else {
-    console.log('Deus ruiiiiiiiiiiiiiiiiiiiiiiiiiiin no forEach')
+    contadorReceitas = contadorReceitas + 1
+    if (contadorReceitas == fimArquivoReceitas) {
+      const entradaReceita = document.createElement('p')
+      entradaReceita.classList.add('receitas')
+      entradaReceita.style.marginBottom = '5px'
+      entradaReceita.innerHTML = 'Não possui receitas cadastradas'
+      divReceitas.appendChild(entradaReceita)
+    }
   }
 
 });
@@ -149,8 +169,6 @@ divUserDescricao.appendChild(espaco)
 
 divUserDados.appendChild(divUserFoto)
 divUserDados.appendChild(divUserDescricao)
-
-
 
 dadosUser.appendChild(divUserDados)
 dadosUser.appendChild(espaco)
@@ -180,7 +198,30 @@ dadosUser.appendChild(botaoCriarReceitas)
 
 
 
-// }
+
+botaoEditarPerfil.addEventListener('click', (event) => {
+  botaoEditarPerfil.style.display = 'none'
+})
+
+botaoCriarCaderno.addEventListener('click', (event) => {
+  window.location.href = "/frontEnd/pages/cadastroCaderno.html"
+
+})
+
+botaoCriarReceitas.addEventListener('click', (event) => {
+  window.location.href = "/frontEnd/pages/cadastroReceita.html"
+})
+
+
+
+
+botaoCriarReceitas
+
+
+
+
+
+
 
 
 

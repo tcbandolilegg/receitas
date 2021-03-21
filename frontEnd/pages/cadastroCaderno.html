@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/frontEnd/src/css/index.css" />
     <link rel="stylesheet" href="/frontEnd/src/css/inputs.css" />
     <link rel="stylesheet" href="/frontEnd/src/css/footer.css" />
-    <link rel="stylesheet" href="/frontEnd/src/css/cadastroReceitas.css" />
+    <link rel="stylesheet" href="/frontEnd/src/css/cadastroCaderno.css" />
   </head>
   <body>
     <nav>
@@ -26,31 +26,20 @@
       <a href="/pages/blog.html">BLOG</a>
       <a href="#faleConosco">FALE CONOSCO</a>
     </nav>
-
     <section>
-      <div class="dados">
-        <h1>Incluir Receita</h1>
-        <div class="topicos">
-          <p class="titulo">Nome da receita</p>
-          <input placeholder="" type="Bolo de aipim" />
-        </div>
-        <div class="topicos">
-          <p class="titulo">Ingredientes</p>
-          <textarea name="" id="" cols="30" rows="4"></textarea>
-        </div>
-        <div class="topicos">
-          <p class="titulo">Modo de preparo</p>
-          <textarea name="" id="" cols="30" rows="4"></textarea>
-        </div>
-        <div class="topicos">
-          <p class="titulo">História sobre a receita</p>
-          <textarea name="" id="" cols="30" rows="4"></textarea>
-        </div>
-        <div class="topicos">
-          <p class="titulo">Imagem da receita</p>
-          <input type="file" />
-        </div>
-        <button class="botaoLaranja">Salvar</button>
+      <div class="campoCaderno">
+        <h1>Cadastrar caderno de receitas</h1>
+        <ul>
+          <li>
+            <p>Nome do caderno</p>
+            <input placeholder="ex.: família Silva" type="text" />
+          </li>
+          <li>
+            <p>Convidar membros</p>
+            <input placeholder="ex.: membro1@email.com" type="text" />
+          </li>
+        </ul>
+        <button class="botaoLaranja">salvar</button>
       </div>
     </section>
     <footer id="faleConosco">
