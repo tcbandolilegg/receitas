@@ -7,41 +7,41 @@ section {
   height: 700px;
 }
 
-.campoCaderno{
+.campoCaderno {
   background-color: white;
-  width: 400px;
+  border: solid 3px var(--dark_orange);
+  width: 600px;
   margin: auto;
   padding: 40px;
   height: 350px;
   text-align: center;
 }
 
-.campoCaderno ul li{
-  display: flex ;
+.campoCaderno ul li {
+  display: flex;
   flex-direction: row;
   margin-bottom: 40px;
 }
 
-.campoCaderno ul p{
+.campoCaderno ul p {
   width: 150px;
   text-align: right;
   margin-right: 16px;
   font-size: 20px;
 }
 
-.campoCaderno h1{
+.campoCaderno h1 {
   text-align: center;
   font-size: 30px;
   margin-bottom: 40px;
   font-weight: bold;
 }
 
-.campoCaderno ul{
+.campoCaderno ul {
   display: flex;
   flex-direction: column;
 }
 
-.botaoLaranja{
+.botaoLaranja {
   margin: auto;
 }
-

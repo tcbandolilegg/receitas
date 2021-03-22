@@ -9,7 +9,8 @@ section {
 .dados {
   text-align: center;
   background-color: white;
-  width: max-content;
+  border: solid 3px var(--dark_orange);
+  width: 700px;
   margin: auto;
   padding: 40px;
   font-size: 20px;

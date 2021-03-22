@@ -17,8 +17,8 @@ function verificaUser(emailEsqueciSenhaGlobal) {
 
   dataUsers.forEach(element => {
     if (element.email == emailEsqueciSenhaGlobal) {
-      alert('Como enviar e-mail aqui')
-      //Enviar email para o usuário ????????
+
+      window.location.href = `mailto: ${element.email}?subject=${element.senha}`
     } else {
       contador = contador + 1
       if (contador == fimArquivo) {
