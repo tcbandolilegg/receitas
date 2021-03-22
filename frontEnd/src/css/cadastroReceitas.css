@@ -30,3 +30,16 @@ section {
 .topicos {
   margin-bottom: 40px;
 }
+
+.campo ul li {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 25px;
+}
+
+.campo ul p {
+  width: 150px;
+  text-align: right;
+  margin-right: 16px;
+  font-size: x-large;
+}
