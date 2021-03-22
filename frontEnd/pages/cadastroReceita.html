@@ -11,9 +11,9 @@
   <link rel="stylesheet" href="/frontEnd/src/css/buttons.css" />
   <link rel="stylesheet" href="/frontEnd/src/css/index.css" />
   <link rel="stylesheet" href="/frontEnd/src/css/inputs.css" />
-  <link rel="stylesheet" href="/frontEnd/src/css/footer.css" />
   <link rel="stylesheet" href="/frontEnd/src/css/cadastroReceitas.css" />
-  <!-- <script src="/frontEnd/js/cadastroReceita.js" defer></script> -->
+  <link rel="stylesheet" href="/frontEnd/src/css/footer.css" />
+  <script src="/frontEnd/js/cadastroReceita.js" defer></script>
 </head>
 
 <body>
@@ -31,8 +31,8 @@
     <div class="dados">
       <h1>Incluir Receita</h1>
      
-      <p> Escolha o caderno da receita
-          <select id="botaoEscolheCaderno" style="width: 200px;">
+      <p style="font-size: larger;"> Escolha o caderno da receita
+          <select id="comboBoxEscolheCaderno" style="width: 200px;">
           </select>
         </p>
         <br><br>
@@ -67,24 +67,50 @@
 
           </li>
         </ul>
-        <button class="botaoLaranja" id="salvarReceita">Salvar</button>
+        <button class="botaoLaranja" id="botaoSalvarReceita">Salvar</button>
       </div>
   </section>
   <footer id="faleConosco">
-    <h1>AJUDA E SUPORTE</h1>
-    <br />
-    <a style="color: var(--dark_red)" href="mailto:receitaslivrodefamilia@gmail.com?subject=Formas%20de%20Pagamento"
-      target="_top">Formas de pagamento</a>
-    <a style="color: var(--dark_red)" href="mailto:receitaslivrodefamilia@gmail.com?subject=Central%20de%20Atendimento"
-      target="_top">Central de Atendimento</a>
-    <a style="color: var(--dark_red)" href="mailto:receitaslivrodefamilia@gmail.com?subject=Politica%20Privacidade"
-      target="_top">Politica Privacidade</a>
-    <a style="color: var(--dark_red)" href="mailto:receitaslivrodefamilia@gmail.com?subject=Trabalhe%20Conosco"
-      target="_top">Trabalhe Conosco</a>
-    <a style="color: var(--dark_red)" href="./frontEnd/pages/TERMOS DE USO de software.pdf" target="_blank">Termo de
-      Uso</a>
-    <a style="color: var(--dark_red)" href="./frontEnd/pages/TERMOS DE USO de software.pdf" target="_blank">Termo de
-      Serviço</a>
+    <div class="contato">
+      <h1>AJUDA E SUPORTE</h1>
+      <br />
+      <a
+        style="color: var(--dark_red)"
+        href="mailto:receitaslivrodefamilia@gmail.com?subject=Formas%20de%20Pagamento"
+        target="_top"
+        >Formas de pagamento</a
+      >
+      <a
+        style="color: var(--dark_red)"
+        href="mailto:receitaslivrodefamilia@gmail.com?subject=Central%20de%20Atendimento"
+        target="_top"
+        >Central de Atendimento</a
+      >
+      <a
+        style="color: var(--dark_red)"
+        href="mailto:receitaslivrodefamilia@gmail.com?subject=Politica%20Privacidade"
+        target="_top"
+        >Politica Privacidade</a
+      >
+      <a
+        style="color: var(--dark_red)"
+        href="mailto:receitaslivrodefamilia@gmail.com?subject=Trabalhe%20Conosco"
+        target="_top"
+        >Trabalhe Conosco</a
+      >
+      <a
+        style="color: var(--dark_red)"
+        href="./frontEnd/pages/TERMOS DE USO de software.pdf"
+        target="_blank"
+        >Termo de Uso</a
+      >
+      <a
+        style="color: var(--dark_red)"
+        href="./frontEnd/pages/TERMOS DE USO de software.pdf"
+        target="_blank"
+        >Termo de Serviço</a
+      >
+    </div>
     </div>
     <div class="redesSociais">
       <h1>REDES SOCIAS</h1>
@@ -93,13 +119,19 @@
         <img src="/frontend/src/assets/images/redes_sociais/facebook_b.png" alt="Facebook" />
       </a>
       <a class="redesSociais" href="">
-        <img src="/frontend/src/assets/images/redes_sociais/instagram_b.png" alt="Instagram" />
+        <img
+          src="/frontend/src/assets/images/redes_sociais/instagram_b.png"
+          alt="Instagram"
+        />
       </a>
       <a class="redesSociais" href="">
         <img src="/frontend/src/assets/images/redes_sociais/linkedin_b.png" alt="LinkedIn" />
       </a>
       <a class="redesSociais" href="">
-        <img src="/frontend/src/assets/images/redes_sociais/pinterest_b.png" alt="Pintrest" />
+        <img
+          src="/frontend/src/assets/images/redes_sociais/pinterest_b.png"
+          alt="Pintrest"
+        />
       </a>
       <a class="redesSociais" href="">
         <img src="/frontend/src/assets/images/redes_sociais/twitter_b.png" alt="Twitter" />

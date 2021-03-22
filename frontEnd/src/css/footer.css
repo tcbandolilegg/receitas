@@ -59,15 +59,6 @@ img:hover {
   filter: none;
 }
 
-footer {
-  font-size: 25px;
-  display: flex;
-  background-color: #2d46b6;
-  color: white;
-  height: 50px;
-  align-items: center;
-}
-
 .contato {
   display: flex;
   flex-direction: column;
