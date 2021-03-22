@@ -96,7 +96,7 @@ dataCadernos.forEach(element => {
 
     entradaCaderno.classList.add('cadernos')
     entradaCaderno.style.marginBottom = '5px'
-    entradaCaderno.innerHTML = 'Família: ' + element.descricao + '........Origem: ' + element.origem
+    entradaCaderno.innerHTML = element.descricao + ' de origem ' + element.origem
     divCadernos.appendChild(entradaCaderno)
   } else {
     contadorCadernos = contadorCadernos + 1

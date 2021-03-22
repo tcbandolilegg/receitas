@@ -3,42 +3,42 @@ const dataCadernos = [
     "id": 1,
     "idUser": 1,
     "decricao": "Bandoli",
-    "origem": "Italiana"
+    "origem": "ITALIANA"
   },
   {
     "id": 2,
     "idUser": 1,
-    "decricao": "Rodolphi",
-    "origem": "Italiana"
+    "decricao": "RODOLPHI",
+    "origem": "ITALIANA"
   },
   {
     "id": 3,
     "idUser": 1,
-    "decricao": "Varella",
-    "origem": "Espanhola"
+    "decricao": "VARELLA",
+    "origem": "ESPANHOLA"
   },
   {
     "id": 4,
     "idUser": 1,
     "decricao": "Legg",
-    "origem": "Inglesa"
+    "origem": "INGLESA"
   },
   {
     "id": 5,
     "idUser": 1,
     "decricao": "Ventura",
-    "origem": "Portuguesa"
+    "origem": "PORTUGUESA"
   },
   {
     "id": 6,
     "idUser": 2,
     "decricao": "Mangueira",
-    "origem": "Italiana"
+    "origem": "ITALIANA"
   },
   {
     "id": 7,
     "idUser": 2,
     "decricao": "Oliveira",
-    "origem": "Brasileira"
+    "origem": "BRASILEIRA"
   }
 ]

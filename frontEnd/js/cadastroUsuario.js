@@ -41,7 +41,7 @@ function verificaUser(userCadastroGlobal, nomeCadastroGlobal, emailCadastroGloba
 
         localStorage.setItem("idUserGlobal", novoId);
 
-        const UserTemp = {
+        const userTemp = {
           id: novoId,
           userLogin: userCadastroGlobal,
           nome: nomeCadastroGlobal,
@@ -56,9 +56,9 @@ function verificaUser(userCadastroGlobal, nomeCadastroGlobal, emailCadastroGloba
           senha: senhaCadastroGlobal
 
         }
-        dataUsers.push(UserTemp)
+        dataUsers.push(userTemp)
         localStorage.setItem("dataUsers", JSON.stringify(dataUsers))
-        console.log(dataUsers)
+
         window.location.href = "/frontEnd/pages/perfil.html"
 
       }

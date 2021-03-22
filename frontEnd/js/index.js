@@ -271,31 +271,31 @@ function doDataCadernos() {
       "id": 1,
       "idUser": 1,
       "descricao": "Bandoli",
-      "origem": "Italiana"
+      "origem": "ITALIANA"
     },
     {
       "id": 2,
       "idUser": 1,
-      "descricao": "Rodolphi",
-      "origem": "Italiana"
+      "descricao": "RODOLPHI",
+      "origem": "ITALIANA"
     },
     {
       "id": 3,
       "idUser": 1,
-      "descricao": "Varella",
-      "origem": "Espanhola"
+      "descricao": "VARELLA",
+      "origem": "ESPANHOLA"
     },
     {
       "id": 4,
       "idUser": 1,
-      "descricao": "Legg",
-      "origem": "Inglesa"
+      "descricao": "LEGG",
+      "origem": "INGLESA"
     },
     {
       "id": 5,
       "idUser": 1,
-      "descricao": "Ventura",
-      "origem": "Portuguesa"
+      "descricao": "VENTURA",
+      "origem": "PORTUGUESA"
     }
   ]
 
@@ -309,7 +309,7 @@ function dataBlog() {
       "id": 1,
       "titulo": "Cueca Virada ou Crustoli",
       "imagem_1": "https://i1.wp.com/panelaterapia.com/wp-content/uploads/2021/03/crustoli.jpg?fit=620%2C407&ssl=1",
-      "matéria": "De origem italiana o Crustoli (Grostoli ou Crostoli) é uma massa tipo de pão, frita e passado no açúcar e canela, mas no Brasil também é conhecida como cueca virada. Essa receita tem algumas versões, e todas que comi até hoje foram bem gostosas! ",
+      "matéria": "De origem ITALIANA o Crustoli (Grostoli ou Crostoli) é uma massa tipo de pão, frita e passado no açúcar e canela, mas no Brasil também é conhecida como cueca virada. Essa receita tem algumas versões, e todas que comi até hoje foram bem gostosas! ",
       "ingredientes": "    2 ovos,     2 colheres(sopa) de manteiga ou margarina,    1/2 xícara (chá) de leite,    6 colheres(sopa) de açúcar,    1/2 colher (sopa) de fermento em pó,    1 pitada de sal,    1 colher(sopa) de cachaça,    2 e 1/2 xícaras (chá) de farinha de trigo (aproximadamente),    Óleo para fritar,    Açúcar e canela em pó para polvilhar ou mel para acompanhar",
       "imagem_2": "https://i1.wp.com/panelaterapia.com/wp-content/uploads/2021/03/cueca-virada-receita.jpg?w=640&ssl=1",
       "modo_preparo": "Em uma tigela, misture os ovos, a margarina, o leite, o açúcar, o fermento, o sal e a cachaça. Acrescente a farinha de trigo, aos poucos, mexendo inicialmente com uma colher e depois com as mãos até que forma uma massa homogênea, macia e que solte das mãos.       Divida a massa em duas partes e abra com ajuda de um rolo em uma superfície enfarinhada até ficar fina (aproximadamente 0,5cm). Corte em retângulos médios (5X10cm, aproximadamente).        Faça um cortinho no meio de cada retângulo e dobre a massa passando por dentro. Frite, aos poucos, em óleo quente até dourar levemente. Retire, escorra em papel toalha e passe por açúcar e canela ou então sirva acompanhado de mel.",
