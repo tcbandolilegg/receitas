@@ -16,11 +16,7 @@ const modoDePreparo = document.querySelector("#modoDePreparo");
 const historiaReceita = document.querySelector("#historiaReceita");
 const fotoReceita = document.querySelector("#fotoReceita");
 
-
-
 const botaoSalvarReceita = document.querySelector("#botaoSalvarReceita");
-
-
 
 botaoSalvarReceita.addEventListener('click', (event) => {
   const nomeReceitaGlobal = nomeReceita.value
@@ -37,26 +33,34 @@ botaoSalvarReceita.addEventListener('click', (event) => {
 const comboBoxEscolheCaderno = document.querySelector('#selectCaderno')
 const tituloSelectCaderno = document.createElement('p')
 tituloSelectCaderno.style.fontSize = 'larger'
+tituloSelectCaderno.innerHTML = 'Escolha seu Caderno'
 
 const selectCaderno = document.createElement('select')
 selectCaderno.style.width = '200px'
+selectCaderno.classList.add('comboBoxEscolheCaderno')
 
-
-
-const comboBoxEscolheCaderno = document.querySelector('#comboBoxEscolheCaderno')
-
+comboBoxEscolheCaderno.appendChild(tituloSelectCaderno)
+comboBoxEscolheCaderno.appendChild(selectCaderno)
 
 comboBoxEscolheCaderno.addEventListener('click', (event) => {
   numeroCadernos = dataCadernos.length
+  console.log('numCadernos', numeroCadernos)
+  console.log('dataCadernos', dataCadernos)
+
 
   for (i = 0; i < numeroCadernos; i++) {
-    option = document.createElement('option')
-    option.value = dataCadernos[i].id + ' - ' + dataCadernos[i].descricao + ' - ' + dataCadernos[i].origem
+    console.log('ComboBox', comboBoxEscolheCaderno)
+    const option = document.createElement('option')
+    console.log('option', option)
+    option.value = dataCadernos[i].id
+    option.text = dataCadernos[i].descricao + ' - ' + dataCadernos[i].origem
+    console.log('option 2', option)
+    console.log('i', i)
     comboBoxEscolheCaderno.add(option, comboBoxEscolheCaderno.options[i])
   }
 
   for (i = 0; i < numeroCadernos; i++) {
-    comboBoxEscolheCaderno.removeChild
+    comboBoxEscolheCaderno.remove(i)
   }
 
 })

@@ -1,6 +1,11 @@
 window.addEventListener('load', function () {
-
-
+  // let loginTrue = localStorage.getItem('LoginTrueGlobal');
+  // if (loginTrue) {
+  //   window.location.href = "/frontEnd/pages/perfil.html"
+  // } else {
+  //   loginTrue = true
+  //   loginTrue = localStorage.setItem('LoginTrueGlobal');
+  // }
   doDataUsers()
   let dataUsers = JSON.parse(localStorage.getItem("dataUsers"))
 
