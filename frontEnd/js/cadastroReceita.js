@@ -43,31 +43,39 @@ comboBoxEscolheCaderno.appendChild(tituloSelectCaderno)
 comboBoxEscolheCaderno.appendChild(selectCaderno)
 
 comboBoxEscolheCaderno.addEventListener('click', (event) => {
+  selectCaderno.remove
+
   numeroCadernos = dataCadernos.length
   console.log('numCadernos', numeroCadernos)
   console.log('dataCadernos', dataCadernos)
-
-
-  for (i = 0; i < numeroCadernos; i++) {
-    console.log('ComboBox', comboBoxEscolheCaderno)
-    const option = document.createElement('option')
-    console.log('option', option)
-    option.value = dataCadernos[i].id
-    option.text = dataCadernos[i].descricao + ' - ' + dataCadernos[i].origem
-    console.log('option 2', option)
-    console.log('i', i)
-    comboBoxEscolheCaderno.add(option, comboBoxEscolheCaderno.options[i])
-  }
+  let j = 0
 
   for (i = 0; i < numeroCadernos; i++) {
-    comboBoxEscolheCaderno.remove(i)
+    if (dataCadernos[i].idUser == idUserGlobal) {
+      console.log('ComboBox', comboBoxEscolheCaderno)
+      const option = document.createElement('option')
+      console.log('option', option)
+      option.value = dataCadernos[i].id
+      option.text = dataCadernos[i].descricao + ' - ' + dataCadernos[i].origem
+      console.log('option depois de colocar id e text', option)
+      console.log('i', i)
+      selectCaderno.add(option, selectCaderno.options[j])
+      j++
+    }
   }
 
-})
+
+});
+console.log("O indice é: " + selectCaderno.selectedIndex);
+console.log("O caderno é: " + selectCaderno[selectedIndex]);
+
+
+
 
 
 
 function verificaReceita(nomeReceitaGlobal, quemCriouGlobal, ingredientesGlobal, historiaReceitaGlobal, fotoReceitaGlobal, modoDePreparoGlobal, idUserGlobal) {
+
   const fimArquivo = dataReceitas.length
   let contador = 0
 
