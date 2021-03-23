@@ -34,7 +34,17 @@ botaoSalvarReceita.addEventListener('click', (event) => {
 
 })
 
+const comboBoxEscolheCaderno = document.querySelector('#selectCaderno')
+const tituloSelectCaderno = document.createElement('p')
+tituloSelectCaderno.style.fontSize = 'larger'
+
+const selectCaderno = document.createElement('select')
+selectCaderno.style.width = '200px'
+
+
+
 const comboBoxEscolheCaderno = document.querySelector('#comboBoxEscolheCaderno')
+
 
 comboBoxEscolheCaderno.addEventListener('click', (event) => {
   numeroCadernos = dataCadernos.length
