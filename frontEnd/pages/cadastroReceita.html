@@ -30,40 +30,39 @@
   <section>
     <div class="dados">
       <h1>Incluir Receita</h1>
-     
-      <p style="font-size: larger;"> Escolha o caderno da receita
-          <select id="comboBoxEscolheCaderno" style="width: 200px;">
-          </select>
-        </p>
+     <div id="selectCaderno">
+
+     </div>
+      
         <br><br>
         
       <div class="topicos campo">
         <ul>
           <li>
             <p class="titulo">Nome da receita</p>
-            <input placeholder="ex. Bolo de aipim" type="text" style="width: 580px" />
+            <input placeholder="ex. Bolo de aipim" name="nomeReceita" id="nomeReceita" type="text" style="width: 580px" />
           </li>
           <li>
             <p class="titulo">Quem Criou</p>
-            <input placeholder="Vovó Joaquina" type="text" style="width: 580px" />
+            <input placeholder="Vovó Joaquina" name="quemCriou" id="quemCriou" type="text" style="width: 580px" />
           </li>
           <li>
             <p class="titulo">Ingredientes</p>
-            <textarea name="" id="" cols="50" rows="4"></textarea>
+            <textarea name="ingredientes"  cols="50" rows="4" id="ingredientes"></textarea>
 
           </li>
           <li>
             <p class="titulo">Modo de preparo</p>
-            <textarea name="" id="" cols="50" rows="4"></textarea>
+            <textarea name="modoDePreparo"  cols="50" rows="4" id="modoDePreparo"></textarea>
           </li>
           <li>
             <p class="titulo">História sobre a receita</p>
-            <textarea name="" id="" cols="50" rows="4"></textarea>
+            <textarea name="historiaReceita" id="historiaReceita" cols="50" rows="4" ></textarea>
 
           </li>
           <li>
             <p class="titulo">Imagem da receita</p>
-            <input type="file" />
+            <input type="file" name="fotoReceita" id="fotoReceita"/>
 
           </li>
         </ul>
