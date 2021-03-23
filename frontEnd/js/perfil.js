@@ -73,17 +73,20 @@ const divBotaoPerfil = document.createElement('div')
 divBotaoPerfil.classList.add('divBotaoPerfil')
 divBotaoPerfil.style.display = 'flex'
 divBotaoPerfil.style.justifyContent = 'center'
+divBotaoPerfil.style.marginTop = "20px"
 
 
 const divBotaoCaderno = document.createElement('div')
 divBotaoCaderno.classList.add('divBotaoCaderno')
 divBotaoCaderno.style.display = 'flex'
 divBotaoCaderno.style.justifyContent = 'center'
+divBotaoCaderno.style.marginTop = "20px"
 
 const divBotaoReceita = document.createElement('div')
 divBotaoReceita.classList.add('divBotaoReceita')
 divBotaoReceita.style.display = 'flex'
 divBotaoReceita.style.justifyContent = 'center'
+divBotaoReceita.style.marginTop = "20px"
 
 
 const botaoEditarPerfil = document.createElement('button')
@@ -187,36 +190,30 @@ divUserFoto.appendChild(fotoUser)
 
 divUserDescricao.appendChild(nameUser)
 divUserDescricao.appendChild(email)
-divUserDescricao.appendChild(espaco)
+
 
 divUserDados.appendChild(divUserFoto)
 divUserDados.appendChild(divUserDescricao)
 
 dadosUser.appendChild(divUserDados)
-dadosUser.appendChild(espaco)
-dadosUser.appendChild(espaco)
+
+
 divBotaoPerfil.appendChild(botaoEditarPerfil)
 dadosUser.appendChild(divBotaoPerfil)
-dadosUser.appendChild(espaco)
-dadosUser.appendChild(espaco)
+
+
 
 dadosUser.appendChild(tituloCaderno)
-dadosUser.appendChild(espaco)
-dadosUser.appendChild(espaco)
+
 dadosUser.appendChild(divCadernos)
-dadosUser.appendChild(espaco)
-dadosUser.appendChild(espaco)
+
 divBotaoCaderno.appendChild(botaoCriarCaderno)
 dadosUser.appendChild(divBotaoCaderno)
-dadosUser.appendChild(espaco)
-dadosUser.appendChild(espaco)
 
 dadosUser.appendChild(tituloReceita)
-dadosUser.appendChild(espaco)
-dadosUser.appendChild(espaco)
+
 dadosUser.appendChild(divReceitas)
-dadosUser.appendChild(espaco)
-dadosUser.appendChild(espaco)
+
 divBotaoReceita.appendChild(botaoCriarReceitas)
 dadosUser.appendChild(divBotaoReceita)
 
