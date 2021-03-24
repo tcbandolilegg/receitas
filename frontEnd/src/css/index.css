@@ -4,7 +4,7 @@ html {
 
 body {
   margin-top: 0;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Times, serif;
 }
 
 a {
@@ -232,6 +232,6 @@ img:hover {
   color: black;
 }
 
-.botaoFale{
+.botaoFale {
   margin-left: 0;
 }

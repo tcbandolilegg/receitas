@@ -18,14 +18,34 @@ nav a {
   text-decoration: none;
 }
 
-nav input {
-  background-color: whitesmoke;
-  border-radius: 5px;
+nav #find {
+  background-color: var(--ligth_yellow);
+  border-radius: 0rem;
   height: 35px;
+  /* width: 35px; */
+  border: none;
 }
 
 nav img {
   height: 45px;
+}
+
+nav #botaoPesquisa {
+  background-image: url(/frontEnd/src/assets/images/lupa.png);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+
+  background-position: center;
+  background-color: var(--ligth_yellow);
+  width: 35px;
+  margin: 0;
+  height: 35px;
+  border: none;
+}
+
+.pesquisa {
+  background-color: var(--ligth_yellow);
+  padding: 5px;
 }
 
 nav a:hover {

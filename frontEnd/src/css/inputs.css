@@ -9,3 +9,10 @@
 input {
   border-radius: 10px;
 }
+
+#find {
+  background-color: var(--ligth_yellow);
+  border-radius: 0;
+  margin: 0rem;
+  height: 35px;
+}

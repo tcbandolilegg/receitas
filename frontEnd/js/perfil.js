@@ -49,9 +49,6 @@ divUserDescricao.style.justifyContent = 'center'
 divUserDescricao.style.alignSelf = 'center'
 
 
-const espaco = document.createElement('br')
-
-
 const fotoUser = document.createElement('img')
 
 fotoUser.src = userPerfil[0].foto

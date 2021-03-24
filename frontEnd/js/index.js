@@ -342,8 +342,6 @@ function doEmAlta() {
 
 
   const dataReceitasSort = dataReceitas.sort(visualizacoes)
-
-
   /// fazer o sorte e separar as 4 primeiras
   const espaco = document.createElement('br')
 

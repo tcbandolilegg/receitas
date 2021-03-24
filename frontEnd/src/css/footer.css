@@ -1,7 +1,7 @@
 footer {
-  font-size: 25px;
+  font-size: 15px;
   display: flex;
-  background-color: #2d46b6;
+  background-color: var(--dark_blue);
   color: white;
   height: auto;
   align-items: center;
@@ -27,8 +27,10 @@ footer {
 
 .redesSociais img {
   margin-top: 5px;
+  margin-right: 25px;
   height: 50px;
 }
+
 .redesSociaisRodape img {
   margin-left: 10px;
   margin-right: 10px;

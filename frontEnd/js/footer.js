@@ -17,7 +17,6 @@ function verificaUser(emailEsqueciSenhaGlobal) {
 
   dataUsers.forEach(element => {
     if (element.email == emailEsqueciSenhaGlobal) {
-
       window.location.href = `mailto: ${element.email}?subject=${element.senha}`
     } else {
       contador = contador + 1
