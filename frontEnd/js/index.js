@@ -1,11 +1,5 @@
 window.addEventListener('load', function () {
-  // let loginTrue = localStorage.getItem('LoginTrueGlobal');
-  // if (loginTrue) {
-  //   window.location.href = "/frontEnd/pages/perfil.html"
-  // } else {
-  //   loginTrue = true
-  //   loginTrue = localStorage.setItem('LoginTrueGlobal');
-  // }
+
   doDataUsers()
   let dataUsers = JSON.parse(localStorage.getItem("dataUsers"))
 
@@ -373,3 +367,14 @@ function doEmAlta() {
   }
 
 }
+
+const btpesquisar = document.querySelector('.pesquisa #botaoPesquisa')
+const pesquisar = document.querySelector('.pesquisa #find')
+
+
+btpesquisar.addEventListener('click', (event) => {
+  const pesquisarGlobal = pesquisar.value
+
+  console.log("teste", pesquisarGlobal)
+
+})
