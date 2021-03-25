@@ -2,6 +2,7 @@
   min-width: 250px;
   align-items: center;
   justify-content: space-around;
+
   display: flex;
 }
 
@@ -50,4 +51,3 @@ nav button a:hover {
   font-size: large;
   color: var(--dark-yellow);
 }
-

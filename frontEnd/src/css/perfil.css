@@ -15,7 +15,30 @@ section {
   padding: 40px;
   height: auto;
   font-size: 20px;
+  justify-content: center;
+}
 
+.dadosPesquisa2 {
+  background-color: white;
+  border: solid 3px var(--dark_orange);
+  width: auto;
+  margin: auto;
+  padding: 40px;
+  height: auto;
+  font-size: 20px;
+  justify-content: center;
+}
+
+.dadosDePesquisa,
+.sectionReceitas,
+#pesquisas {
+  background-color: white;
+  border: solid 3px var(--dark_orange);
+  width: auto;
+  margin: auto;
+  padding: 40px;
+  height: auto;
+  font-size: 20px;
   justify-content: center;
 }
 
@@ -24,6 +47,12 @@ section {
   flex-direction: column;
 }
 .dados h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+.dadosPesquisa2 h1 {
   text-align: center;
   font-size: 30px;
   margin-bottom: 40px;

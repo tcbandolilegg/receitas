@@ -374,7 +374,6 @@ const pesquisar = document.querySelector('.pesquisa #find')
 
 btpesquisar.addEventListener('click', (event) => {
   const pesquisarGlobal = pesquisar.value
-
-  console.log("teste", pesquisarGlobal)
-
+  localStorage.setItem("pesquisarGlobal", pesquisarGlobal);
+  window.location.href = "/frontEnd/pages/pesquisaReceitas.html"
 })

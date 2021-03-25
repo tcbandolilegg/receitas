@@ -234,10 +234,6 @@ botaoCriarReceitas.addEventListener('click', (event) => {
 
 
 
-botaoCriarReceitas
-
-
-
 
 
 
