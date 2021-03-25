@@ -29,13 +29,15 @@ const fimArquivo = dataReceitas.length
 
 
 dataReceitas.forEach(element => {
-  let nomePesq = element.nome_receita
+  let nomePesq = element.nome_receita.toUpperCase()
   console.log(nomePesq)
-  if (nomePesq.indexOf(pesquisarGlobal) > -1) {
+  if (nomePesq.indexOf(pesquisarGlobal.toUpperCase()) > -1) {
 
     const sectionReceitas = document.createElement('div')
     sectionReceitas.classList.add('sectionReceitas')
     sectionReceitas.style.marginBottom = '15px'
+    sectionReceitas.style.marginRight = '20px'
+
     sectionReceitas.style.display = 'flex'
     sectionReceitas.style.justifyContent = 'space-around'
 
@@ -46,6 +48,7 @@ dataReceitas.forEach(element => {
     divDadosReceita.style.alignContent = 'center'
     divDadosReceita.style.alignItems = 'center'
     divDadosReceita.style.textAlign = 'center'
+    divDadosReceita.style.marginRight = '20px'
 
     console.log(divDadosReceita)
 
@@ -95,6 +98,7 @@ dataReceitas.forEach(element => {
 
     const divIngredientes = document.createElement('div')
     divIngredientes.classList.add('divIngredientes')
+    divIngredientes.style.marginRight = '20px'
     console.log(divIngredientes)
 
     const tituloIngredientes = document.createElement('h1')
